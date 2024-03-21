@@ -3,7 +3,8 @@
 ## [Chapter 1 - Security Principles](https://www.isc2.org/Training/Self-Study-Resources/CC/chapter-1)
 
 1. Security commensurate with the risk and the magnitude of harm resulting from the loss, misuse or unauthorized access to or modification of information.
-  > Adequate Security
+1. 安全性與資訊遺失、誤用或未經授權的存取或修改所造成的風險和損害程度相稱。
+  > Adequate Security足夠的安全保障
 2. Controls implemented through policy and procedures. Examples include access control processes and requiring multiple personnel to conduct a specific operation. Administrative controls in modern environments are often enforced in conjunction with physical and/or technical controls, such as an access-granting policy for new users that requires login and approval by the hiring manager.
   > Administrative Controls
 3. The ability of computers and robots to simulate human intelligence and behavior.
