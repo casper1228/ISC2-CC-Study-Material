@@ -4,10 +4,10 @@
 
 1. Security commensurate with the risk and the magnitude of harm resulting from the loss, misuse or unauthorized access to or modification of information.
   > Adequate Security
-足夠的安全性,與風險和因資訊遺失、濫用或未經授權存取或修改而造成的危害程度相稱。
+
 2. Controls implemented through policy and procedures. Examples include access control processes and requiring multiple personnel to conduct a specific operation. Administrative controls in modern environments are often enforced in conjunction with physical and/or technical controls, such as an access-granting policy for new users that requires login and approval by the hiring manager.
   > Administrative Controls
-通過政策和程序實施的控制。例如包括存取控制流程和要求多人執行特定操作。在現代環境中,管理控制通常與實體和/或技術控制相結合執行,例如對新用戶的存取授權政策,需要經理人登錄並批准。
+
 3. The ability of computers and robots to simulate human intelligence and behavior.
   > Artificial Intelligence
 4. Anything of value that is owned by an organization. Assets include both tangible items such as information systems and physical property and intangible assets such as intellectual property.
