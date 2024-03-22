@@ -5,12 +5,15 @@
 Domain D5.0, D5.1.1, D5.1.2, D5.1.3
 
 **Hardening** is the process of applying secure configurations (to reduce the attack surface) and locking down various hardware, communications systems and software, including the operating system, web server, application server and applications, etc. This module introduces configuration management practices that will ensure systems are installed and maintained according to industry and organizational security standards. 
+**加固**是应用安全配置（以减少攻击面）和锁定各种硬件、通信系统和软件（包括操作系统、网络服务器、应用服务器和应用程序等）的过程。本模块介绍配置管理实践，以确保系统的安装和维护符合行业和组织的安全标准。
 
 ### Data Handling
-
+＃＃＃ 資料處理
 Data itself goes through **its own life cycle as users create**, **use**, **share and modify it**. The data security life cycle model is useful because **it can align easily with the different roles that people and organizations perform during the evolution of data from creation to destruction (or disposal)**. It also helps put the different **data states of in use, at rest and in motion, into context**. 
+随着用户创建**、使用**、共享和修改**，数据本身也会经历**个生命周期。数据安全生命周期模型非常有用，因为**它很容易与人们和组织在数据从创建到销毁（或处置）**的演变过程中所扮演的不同角色保持一致。它还有助于将使用中、静止中和运动中的不同**数据状态与上下文**联系起来。
 
 All ideas, data, information or knowledge can be thought of as going through six major sets of activities throughout its lifetime. Conceptually, these involve:
+所有想法、数据、信息或知识在其整个生命周期中都会经历六组主要活动。从概念上讲，这些活动包括
 
 1. Creating the knowledge, which is usually tacit knowledge at this point.
 2. Storing or recording it in some fashion (which makes it explicit).
@@ -18,6 +21,12 @@ All ideas, data, information or knowledge can be thought of as going through six
 4. Sharing the data with other users, whether as a copy or by moving the data from one location to another.
 5. Archiving the data when it is temporarily not needed.
 6. Destroying the data when it is no longer needed.
+1. 创造知识，此时通常是隐性知识。
+2. 以某种方式存储或记录知识（使其显性化）。
+3. 使用知识，这可能导致信息被修改、补充或部分删除。
+4. 与其他用户共享数据，无论是作为副本还是通过将数据从一个位置移动到另一个位置。
+5. 在暂时不需要时将数据存档。
+6. 不再需要时销毁数据。
 
 ### Data Handling Practices
 
