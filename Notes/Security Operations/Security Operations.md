@@ -237,84 +237,121 @@ The change management process includes the following components.
 变革管理流程包括以下组成部分。
 
 Documentation: All of the major change management practices address a common set of core activities that start with a request for change (RFC) and move through various development and test stages until the change is released to the end users. From first to last, each step is subject to some form of formalized management and decision-making; each step produces accounting or log entries to document its results. 
+文档： 所有主要的变更管理实践都涉及一套共同的核心活动，从变更请求（RFC）开始，经过不同的开发和测试阶段，直至向最终用户发布变更。从第一步到最后一步，每个步骤都要接受某种形式的正规化管理和决策；每个步骤都要产生记录其结果的账目或日志条目。
 
 Approval: These processes typically include: Evaluating the RFCs for completeness, Assignment to the proper change authorization process based on risk and organizational practices, Stakeholder reviews, resource identification and allocation, Appropriate approvals or rejections, and Documentation of approval or rejection.
+审批： 这些流程通常包括 评估 RFC 的完整性、根据风险和组织惯例分配到适当的变更授权流程、利益相关者审查、资源确定和分配、适当的批准或拒绝，以及批准或拒绝的文档。
 
 Rollback: Depending upon the nature of the change, a variety of activities may need to be completed. These generally include: Scheduling the change, Testing the change, Verifying the rollback procedures, Implementing the change, Evaluating the change for proper and effective operation, and Documenting the change in the production environment. Rollback authority would generally be defined in the rollback plan, which might be immediate or scheduled as a subsequent change if monitoring of the change suggests inadequate performance.
+回滚： 根据变更的性质，可能需要完成各种活动。这些活动一般包括 安排变更、测试变更、验证回滚程序、实施变更、评估变更是否正确有效，以及记录生产环境中的变更。回滚权限一般会在回滚计划中定义，如果对变更的监控表明性能不足，可能会立即回滚或安排作为后续变更。
 
 ## Module 4: Understand Security Awareness Training
-
+## 模块 4：了解安全意识培训
 Domain D5.4, D5.4.1, D5.4.2, D5.3.2 
 
 **To reduce the effectiveness of certain types of attacks** (such as social engineering), it is crucial that the organization informs its **employees and staff** **how to recognize security problems and how to operate in a secure manner**. While the specifics of secure operation differ in each organization, there are some general concepts that are applicable to all such programs. 
+**为了降低某些类型的攻击**（如社会工程学）的有效性，组织必须告知其**员工和工作人员**如何识别安全问题以及如何以安全的方式运行**。虽然每个组织的安全操作细节各不相同，但有一些一般概念适用于所有此类计划。
 
 ### Purpose
-
+### 目的
 The purpose of awareness training is to make sure everyone knows what is expected of them, based on responsibilities and accountabilities, and to find out if there is any carelessness or complacency that may pose a risk to the organization. We will be able to align the information security goals with the organization’s missions and vision and have a better sense of what the environment is. 
+意识培训的目的是确保每个人都知道基于职责和责任对他们的期望，并找出是否存在任何可能对组织构成风险的粗心大意或自满情绪。我们将能够使信息安全目标与组织的使命和愿景保持一致，并对环境有更好的认识。
 
 ### What is Security Awareness Training?
+### 什么是安全意识培训？
 
 Let’s start with a clear understanding of the **three different types of learning activities that organizations use**, whether for information security or for any other purpose:
+首先，让我们清楚地了解**组织使用的三种不同类型的学习活动，无论是用于信息安全还是其他目的：
 
 * **Education**: The overall goal of education is to help learners **improve their understanding of these ideas and their ability to relate them to their own experiences and apply that learning in useful ways**.
-
+* 教育**： 教育的总体目标是帮助学习者**提高对这些观点的理解，以及将这些观点与自身经验相联系并以有用的方式应用所学知识的能力**。
+  
 * **Training**: Focuses on **building proficiency in a specific set of skills or actions**, including sharpening the perception and judgment needed to make decisions as to which skill to use, when to use it and how to apply it. **Training can focus on low-level skills, an entire task or complex workflows consisting of many tasks**.
+* 培训**： 重点是**培养对一套特定技能或行动**的熟练程度，包括提高对使用哪种技能、何时使用以及如何使用做出决策所需的感知力和判断力。**培训可以侧重于低级技能、整个任务或由许多任务组成的复杂工作流程**。
 
 * **Awareness**: These are activities that attract and engage the learner’s attention by acquainting them with aspects of an issue, concern, problem or need.
+* 认识**： 这些活动通过让学习者了解某一问题、关注事项、难题或需求的方方面面来吸引学习者的注意力。
 
 You’ll notice that none of these have an expressed or implied degree of formality, location or target audience. (Think of a newly hired senior executive with little or no exposure to the specific compliance needs your organization faces; first, someone has to get their attention and make them aware of the need to understand. The rest can follow.)
+您会注意到，这些信息都没有明示或暗示正式程度、地点或目标受众。(首先，必须有人引起他们的注意，让他们意识到了解的必要性。剩下的事情就水到渠成了）。
 
 ### Security Awareness Training Examples
-
+#### 安全意识培训示例
 Let’s look at an example of security awareness training by using an organization’s strategy to improve fire safety in the workplace: 
+让我们通过一个组织改善工作场所消防安全的战略，来看看安全意识培训的例子： 
 
 Education may help workers in a secure server room understand the interaction of the various fire and smoke detectors, suppression systems, alarms and their interactions with electrical power, lighting and ventilation systems. 
 Training would provide those workers with task-specific, detailed learning about the proper actions each should take in the event of an alarm, a suppression system going off without an alarm, a ventilation system failure or other contingency. This training would build on the learning acquired via the educational activities. 
 Awareness activities would include not only posting the appropriate signage, floor or doorway markings, but also other indicators to help workers detect an anomaly, respond to an alarm and take appropriate action. In this case, awareness is a constantly available reminder of what to do when the alarms go off. 
+教育可以帮助安全服务器机房的工作人员了解各种火灾和烟雾探测器、灭火系统、警报的相互作用，以及它们与电力、照明和通风系统的相互作用。
+培训将为这些工作人员提供针对具体任务的详细学习，让他们了解在发生警报、灭火系统在没有警报的情况下熄灭、通风系统故障或其他紧急情况时，每个人应采取的正确行动。这种培训将以通过教育活动获得的知识为基础。
+提高认识活动不仅包括张贴适当的标牌、地板或门口标记，还包括其他指标，以帮助工人发现异常、对警报做出反应并采取适当行动。在这种情况下，"意识 "就是在警报响起时不断提醒人们该怎么做。
 
 Translating that into an anti-phishing campaign might be done by: 
+可以通过以下方式将其转化为反网络钓鱼活动： 
 
 Education may be used to help select groups of users better understand the ways in which social engineering attacks are conducted and engage those users in creating and testing their own strategies for improving their defensive techniques. 
 Training will help users increase their proficiency in recognizing a potential phishing or similar attempt, while also helping them practice the correct responses to such events. Training may include simulated phishing emails sent to users on a network to test their ability to identify a phishing email.
 Raising users’ overall awareness of the threat posed by phishing, vishing, SMS phishing (also called “smishing) and other social engineering tactics. Awareness techniques can also alert selected users to new or novel approaches that such attacks might be taking. 
 Let’s look at some common risks and why it’s important to include them in your security awareness training programs. 
+教育可用于帮助选定的用户群体更好地了解社会工程学攻击的方式，并让这些用户参与制定和测试自己的策略，以改进他们的防御技术。
+培训将帮助用户提高识别潜在网络钓鱼或类似企图的熟练程度，同时帮助他们练习对此类事件的正确反应。培训可包括向网络用户发送模拟网络钓鱼电子邮件，以测试他们识别网络钓鱼电子邮件的能力。
+提高用户对网络钓鱼、虚拟网络钓鱼、短信网络钓鱼（也称为 "网络钓鱼"）和其他社会工程学策略所造成威胁的整体认识。认识技术还可以提醒选定用户注意此类攻击可能采取的新方法或新型方法。
+让我们来看看一些常见的风险，以及将它们纳入安全意识培训计划的重要性。
 
 
 #### Phishing
+#### 網路釣魚
 
 The use of phishing attacks to target individuals, entire departments and even companies is a significant threat that the security professional needs to be aware of and be prepared to defend against. Countless variations on the basic phishing attack have been developed in recent years, leading to a variety of attacks that are deployed relentlessly against individuals and networks in a never-ending stream of emails, phone calls, spam, instant messages, videos, file attachments and many other delivery mechanisms.
+利用网络钓鱼攻击来攻击个人、整个部门甚至公司，是安全专业人员需要了解并做好防御准备的重大威胁。近年来，在基本的网络钓鱼攻击基础上又开发出了无数的变种，导致各种攻击通过电子邮件、电话、垃圾邮件、即时信息、视频、文件附件和许多其他传输机制，无休止地针对个人和网络进行部署。
 
 Phishing attacks that attempt to trick highly placed officials or private individuals with sizable assets into authorizing large fund wire transfers to previously unknown entities are known as whaling attacks .
+网络钓鱼攻击试图诱骗拥有巨额资产的高级官员或个人授权向以前未知的实体进行大额资金电汇，这种攻击被称为 "捕鲸攻击"。
 
 #### Social Engineering
-
+＃＃＃＃ 社會工程學
 Social engineering is an important part of any security awareness training program for one very simple reason: bad actors know that it works. For the cyberattackers, social engineering is an inexpensive investment with a potentially very high payoff. Social engineering, applied over time, can extract significant insider knowledge about almost any organization or individual.
+社会工程学是任何安全意识培训计划的重要组成部分，原因很简单：坏人知道它有效。对于网络攻击者来说，社会工程学是一项成本低廉的投资，但回报却可能非常高。长期应用社会工程学，几乎可以获取任何组织或个人的重要内幕信息。
 
 One of the most important messages to deliver in a security awareness program is an understanding of the threat of social engineering. People need to be reminded of the threat and types of social engineering so that they can recognize and resist a social engineering attack.
+安全意识计划要传达的最重要信息之一就是了解社会工程学的威胁。需要提醒人们社会工程学的威胁和类型，以便他们能够识别和抵御社会工程学攻击。
 
 Most social engineering techniques are not new. Many have even been taught as basic fieldcraft for espionage agencies and are part of the repertoire of investigative techniques used by real and fictional police detectives. A short list of the tactics that we see across cyberspace currently includes:
+大多数社会工程学技术并不新鲜。许多技术甚至作为间谍机构的基本实战技术被传授，也是真实和虚构的警探所使用的调查技术的一部分。我们目前在网络空间中看到的社会工程学手段包括
 
 Phone phishing or vishing: Using a rogue interactive voice response (IVR) system to re-create a legitimate-sounding copy of a bank or other institution’s IVR system. The victim is prompted through a phishing email to call in to the “bank” via a provided phone number to verify information such as account numbers, account access codes or a PIN and to confirm answers to security questions, contact information and addresses. A typical vishing system will reject logins continually, ensuring the victim enters PINs or passwords multiple times, often disclosing several different passwords. More advanced systems may be used to transfer the victim to a human posing as a customer service agent for further questioning.
+电话网络钓鱼或虚拟网络钓鱼：使用流氓交互式语音应答（IVR）系统重新创建一个听起来合法的银行或其他机构 IVR 系统副本。网络钓鱼邮件会提示受害者通过提供的电话号码致电 "银行"，以核实账户号码、账户访问代码或 PIN 码等信息，并确认安全问题、联系信息和地址的答案。典型的网络钓鱼系统会不断拒绝登录，确保受害者多次输入 PIN 或密码，通常会泄露多个不同的密码。更先进的系统可能会将受害者转给冒充客户服务代理的人工进行进一步询问。
 
 Pretexting: The human equivalent of phishing, where someone impersonates an authority figure or a trusted individual in an attempt to gain access to your login information. The pretexter may claim to be an IT support worker who is supposed to do maintenance or an investigator performing a company audit. Or they might impersonate a coworker, the police, a tax authority or some other seemingly legitimate person. The goal is to gain access to your computer and information.
 Quid pro quo: A request for your password or login credentials in exchange for some compensation, such as a “free gift,” a monetary payment or access to an online game or service. If it sounds too good to be true, it probably is.
 Tailgating: The practice of following an authorized user into a restricted area or system. The low-tech version of tailgating would occur when a stranger asks you to hold the door open behind you because they forgot their company RFID card. In a more sophisticated version, someone may ask to borrow your phone or laptop to perform a simple action when he or she is actually installing malicious software onto your device.
 Social engineering works because it plays on human tendencies. Education, training and awareness work best to counter or defend against social engineering because they help people realize that every person in the organization plays a role in information security.
+伪装： 相当于网络钓鱼，有人假冒权威人士或受信任的个人，试图获取您的登录信息。假冒者可能声称自己是负责维护的 IT 支持人员或执行公司审计的调查人员。他们也可能冒充同事、警察、税务机关或其他看似合法的人。其目的是获取您的计算机和信息。
+交换条件： 要求您提供密码或登录凭证，以换取某些补偿，如 "免费礼物"、金钱付款或访问在线游戏或服务。如果听起来好得不像真的，那很可能就是真的。
+尾随： 尾随授权用户进入限制区域或系统的行为。技术含量较低的尾随行为是指陌生人因忘记携带公司的 RFID 卡而要求你在其身后为其开门。在更复杂的版本中，有人可能会要求借用你的手机或笔记本电脑来执行一个简单的操作，而实际上他或她正在你的设备上安装恶意软件。
+社会工程之所以有效，是因为它利用了人类的倾向。教育、培训和意识是对抗或抵御社会工程学的最佳方法，因为它们能帮助人们认识到组织中的每个人都在信息安全中扮演着重要角色。
 
 #### Password Protection
-
+#### 密碼保護
 We use many different passwords and systems. Many password managers will store a user’s passwords for them so the user does not have to remember all their passwords for multiple systems. The greatest disadvantage of these solutions is the risk of compromise of the password manager.
+我们使用许多不同的密码和系统。许多密码管理器会为用户储存密码，这样用户就不必记住多个系统的所有密码。这些解决方案的最大弊端是密码管理器有被泄露的风险。
 
 These password managers may be protected by a weak password or passphrase chosen by the user and easily compromised. There have been many cases where a person’s private data was stored by a cloud provider but easily accessed by unauthorized persons through password compromise.
+这些密码管理器可能由用户选择的弱密码或口令保护，很容易被破解。在许多案例中，云提供商存储了个人的私人数据，但未经授权的人很容易通过密码泄露获取这些数据。
 
 Organizations should encourage the use of different passwords for different systems and should provide a recommended password management solution for its users.
+各组织应鼓励不同系统使用不同的密码，并应为用户提供推荐的密码管理解决方案。
 
 Examples of poor password protection that should be avoided are:
+应避免的密码保护不当的例子有
 
 Reusing passwords for multiple systems, especially using the same password for business and personal use.
 Writing down passwords and leaving them in unsecured areas.
 Sharing a password with tech support or a co-worker.
-
+在多个系统中重复使用密码，尤其是在业务和个人使用中使用相同的密码。
+写下密码并将其留在不安全的地方。
+与技术支持人员或同事共享密码。
 
 
 
