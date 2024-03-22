@@ -21,7 +21,7 @@ All ideas, data, information or knowledge can be thought of as going through six
 4. Sharing the data with other users, whether as a copy or by moving the data from one location to another.
 5. Archiving the data when it is temporarily not needed.
 6. Destroying the data when it is no longer needed.
-
+####
 1. 创造知识，此时通常是隐性知识。
 2. 以某种方式存储或记录知识（使其显性化）。
 3. 使用知识，这可能导致信息被修改、补充或部分删除。
