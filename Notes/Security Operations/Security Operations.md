@@ -1,7 +1,7 @@
 # L5 Security Operations
-
+L5 安全營運
 ## Module 1: Understand Data Security
-
+## 模組 1：了解資料安全
 Domain D5.0, D5.1.1, D5.1.2, D5.1.3
 
 **Hardening** is the process of applying secure configurations (to reduce the attack surface) and locking down various hardware, communications systems and software, including the operating system, web server, application server and applications, etc. This module introduces configuration management practices that will ensure systems are installed and maintained according to industry and organizational security standards. 
