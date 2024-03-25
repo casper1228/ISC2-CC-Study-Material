@@ -224,39 +224,62 @@ Matrix: Probability X Impact generates four possible combinations:
 * **A vulnerability** is a gap or weakness in an organization's protection of its valuable assets, including information. (NIST SP 800-30). A vulnerability is an inherent weakness or flaw in a system or component, which, if triggered or acted upon, could cause a risk event to occur. An organization’s security team strives to decrease its vulnerability. To do so, **they view their organization with the eyes of the threat actor**, asking themselves, **“Why would we be an attractive target?”** The answers might provide steps to take that will discourage threat actors, cause them to look elsewhere or simply make it more difficult to launch an attack successfully. **Managing vulnerabilities starts with one simple step: Learn what they are**.
 * **A threat** is something or someone that aims to exploit a vulnerability to gain unauthorized access. A threat is a person or thing that takes action to exploit (or make use of) a target organization’s system vulnerabilities, as part of achieving or furthering its goal or objectives.
 * Likelihood, when determining an organization’s vulnerabilities, the security team will consider **the probability**, or likelihood , of **a potential vulnerability being exploited within the construct of the organization’s threat environment**. **Likelihood of occurrence is a weighted factor based on a subjective analysis of the probability that a given threat or set of threats is capable of exploiting a given vulnerability or set of vulnerabilities.**
+** 资产**是需要保护的东西，因为它对组织有价值。它可以是有形资产，也可以是无形资产，如信息。
+** 漏洞**是组织在保护其宝贵资产（包括信息）方面存在的漏洞或薄弱环节。(NIST SP 800-30)。漏洞是系统或组件中固有的弱点或缺陷，一旦触发或采取行动，就可能导致风险事件的发生。组织的安全团队努力降低其脆弱性。要做到这一点，**他们要以威胁行动者的眼光来看待自己的组织**，问自己：**"为什么我们会成为一个有吸引力的目标？"**答案可能会提供一些步骤，让威胁行动者望而却步、另觅他处，或者只是增加成功发起攻击的难度。**管理漏洞从一个简单的步骤开始： 了解它们是什么**。
+**威胁**是旨在利用漏洞获取未经授权访问的东西或人。威胁是指采取行动利用（或利用）目标组织的系统漏洞，以实现或推进其目标或目的的人或事。
+* 可能性，在确定组织的漏洞时，安全团队将考虑**在组织的威胁环境中**潜在漏洞被利用的概率**或可能性。**发生的可能性是一个基于以下因素的加权系数。
 
 Finally, the security team will consider the likely results if a threat is realized and an event occurs. Impact is the magnitude of harm that can be expected to result from the consequences of unauthorized disclosure of information, unauthorized modification of information, unauthorized destruction of information, or loss of information or information system availability.
+最后，安全团队将考虑威胁实现和事件发生时可能产生的结果。影响是指未经授权披露信息、未经授权修改信息、未经授权破坏信息或丢失信息或信息系统可用性的后果可能造成的危害程度。
+
 
 Think about the impact and the chain of reaction that can result when an event occurs by revisiting the pickpocket scenario: **Risk comes from the intersection of those three concepts**.
+通过重温扒手事件，思考事件发生时可能产生的影响和连锁反应： **风险来自这三个概念的交叉**。
 
 ### Risk Identification
+### 風險識別
 
 In the world of cyber, **identifying risks is not a one-and-done activity**. It’s a recurring process of identifying different possible risks, characterizing them and then estimating their potential for disrupting the organization.  
+在网络世界中，**识别风险并不是一项一劳永逸的活动**。这是一个反复进行的过程，需要识别各种可能的风险，对其进行定性，然后估计其对组织造成破坏的可能性。  
 
 Takeaways to remember about risk identification: 
 * Identify risk to communicate it clearly. 
 * Employees at all levels of the organization are responsible for identifying risk.
 * Identify risk to protect against it.
+要牢记的风险识别要点： 
+* 识别风险，明确传达风险。
+* 组织各级员工都有责任识别风险。
+* 识别风险以防范风险。
 
 As a security professional, you are likely to assist in risk assessment at a system level, focusing **on process, control, monitoring or incident response and recovery activities**. If you’re working with a smaller organization, or one that lacks any kind of risk management and mitigation plan and program, you might have the opportunity to help fill that planning void.
+作为一名安全专业人员，您可能会协助进行系统级别的风险评估，重点**流程、控制、监控或事件响应和恢复活动**。 如果您所服务的组织规模较小，或者缺乏任何类型的风险管理和缓解计划和方案，您可能有机会帮助填补这一规划空白。
 
 ### Risk Assessment
+＃＃＃ 風險評估
 
 Risk assessment is defined as **the process of identifying**, **estimating and prioritizing risks to an organization’s operations** (including its mission, functions, image and reputation), **assets**, **individuals**, **other organizations and even the nation**. Risk assessment should result in aligning (or associating) **each identified risk resulting from the operation of an information system with the goals, objectives, assets or processes that the organization uses, which in turn aligns with or directly supports achieving the organization’s goals and objectives**. A risk assessment can prioritize items for management to determine the method of mitigation that best suits the assets being protected. The result of the risk assessment process is **often documented as a report or presentation given to management for their use in prioritizing the identified risk(s)**. This report is provided to management for review and approval. In some cases, management may indicate a need for a more in-depth or detailed risk assessment performed by internal or external resources.  
+风险评估的定义是**识别**、**估算和优先排序一个组织的运作**（包括其使命、职能、形象和声誉）、**资产**、**个人**、**其他组织甚至国家**所面临的风险的过程。风险评估的结果应是将**信息系统的运行所产生的每一个已识别的风险与该组织使用的目标、目的、资产或流程相一致（或相关联），进而与实现该组织的目标和目的相一致或直接支持实现**。风险评估可以为管理层确定项目的优先次序，以确定最适合所保护资产的缓解方法。风险评估过程的结果**通常以报告或介绍的形式记录下来，提供给管理层，供他们在确定已识别风险**的优先次序时使用。该报告将提供给管理层审查和批准。在某些情况下，管理层可能会表示需要由内部或外部资源进行更深入或更详细的风险评估。 
 
 ### Risk Treatment
+### 風險處理
 
 Risk treatment relates **to making decisions about the best actions to take regarding the identified and prioritized risk**. The decisions made are dependent on the attitude of management toward risk and the availability — and cost — of risk mitigation. The options commonly used to respond to risk are:
+风险处理与**有关，即就已确定和优先考虑的风险**做出最佳行动决定。所做的决定取决于管理层对风险的态度以及减轻风险的可用性和成本。通常用来应对风险的方案有：
 
 * Avoidance: **It is the decision to attempt to eliminate the risk entirely**. This could include ceasing operation for some or all of the activities of the organization that are exposed to a particular risk. **Organization leadership may choose risk avoidance when the potential impact of a given risk is too high or if the likelihood of the risk being realized is simply too great**.
+* 避免： **这是试图完全消除风险的决定**。这可能包括停止组织面临特定风险的部分或全部活动。当某一风险的潜在影响过大或风险实现的可能性过大时，**组织领导层可能会选择规避风险**。
 
 * Acceptance: Risk acceptance is taking **no action to reduce the likelihood of a risk occurring**. Management may opt for conducting the business function that is associated with the risk **without any further action on the part of the organization**, either because the impact or likelihood of occurrence is negligible, or because the benefit is more than enough to offset that risk.
+* 接受： 接受风险是指**不采取行动降低风险发生的可能性**。管理层可能会选择开展与风险相关的业务职能**，而不采取任何进一步的行动**，因为其影响或发生的可能性可以忽略不计，或者因为其收益足以抵消该风险。
 
 * Mitigation: Risk mitigation **is the most common type of risk management and includes taking actions to prevent or reduce the possibility of a risk event or its impact**. Mitigation can involve **remediation measures**, **or controls**, **such as security controls, establishing policies, procedures, and standards to minimize adverse risk**. Risk cannot always be mitigated, but mitigations such as safety measures should always be in place.
+* 缓解： 风险缓解**是最常见的风险管理类型，包括采取行动防止或减少风险事件发生的可能性或其影响**。缓解可能涉及**补救措施**，**或控制**，**如安全控制，制定政策、程序和标准，以尽量减少不利风险**。风险不可能总是得到缓解，但安全措施等缓解措施应始终到位。
 
 * Transfer: **Risk transference is the practice of passing the risk to another party**, who will accept the financial impact of the harm resulting from a risk being realized in exchange for payment. Typically, this is an insurance policy.
+* 转移： **风险转移是将风险转嫁给另一方**的做法，另一方将接受风险实现所造成的损害的财务影响，以换取付款。通常情况下，这是一种保险。
 
 ### Base Concepts
+### 基本概念
 
 * Mitigation: Taking action to prevent or reduce the impact of an event
 * Acceptance: Ignoring the risks and continuing risky activities
@@ -265,59 +288,93 @@ Risk treatment relates **to making decisions about the best actions to take rega
 * Asset: Something of value that is owned by an organization, including physical hardware and intellectual property
 * Threat: A person or an entity that deliberately takes actions to exploit a target
 * Transference: Passing risk to a third party
+* 缓解： 采取行动防止或减少事件的影响
+* 接受： 忽视风险，继续从事有风险的活动
+* 避免： 停止风险活动，以消除事件发生的可能性。
+* 脆弱性： 固有的弱点或缺陷
+* 资产：组织拥有的有价值的东西，包括物理硬件和知识产权
+* 威胁： 蓄意采取行动利用目标的个人或实体
+* 转移： 将风险转嫁给第三方
 
 ### Risk Priorities
+### 風險優先級
 
 When risks have been identified, it is time to prioritize and analyze core risks through qualitative risk analysis and/or quantitative risk analysis. This is necessary to determine **root cause and narrow down apparent risks and core risks**. Security professionals work with their teams to conduct both qualitative and quantitative analysis. 
+在确定风险之后，就需要通过定性风险分析和/或定量风险分析，对核心风险进行优先排序和分析。这对于确定**根本原因、缩小明显风险和核心风险**是必要的。安全专业人员与其团队合作进行定性和定量分析。
 
 Understanding the organization’s overall mission and the functions that support the mission helps **to place risks in context**, **determine the root causes and prioritize the assessment and analysis of these items**. In most cases, management will provide direction for using the findings of the risk assessment to determine a prioritized set of risk-response actions.
+了解组织的总体使命和支持使命的职能有助于**风险的来龙去脉**，**确定根本原因，并确定评估和分析这些项目的优先次序**。 在大多数情况下，管理层会指导如何利用风险评估的结果来确定一套风险应对行动的优先次序。
 
 One effective method to prioritize risk is to use **a risk matrix**, which helps identify priority **as the intersection of likelihood of occurrence and impact**. It also gives the team a common language to use with management when determining the final priorities. For example, a low likelihood and a low impact might result in a low priority, while an incident with a high likelihood and high impact will result in a high priority. Assignment of priority may relate to business priorities, the cost of mitigating a risk or the potential for loss if an incident occurs.
+确定风险优先次序的一个有效方法是使用**风险矩阵**，该矩阵有助于确定**发生的可能性与**影响的交叉点**的优先次序。它还为团队提供了一种共同语言，以便在确定最终优先事项时与管理层一起使用。例如，低可能性和低影响可能导致低优先级，而高可能性和高影响的事件将导致高优先级。优先级的分配可能与业务优先级、降低风险的成本或发生事故时可能造成的损失有关。
 
 ### Decision Making Based on Risk Priorities
+### 基於風險優先順序的決策
 
 When making decisions based on risk priorities, organizations must evaluate the likelihood and impact of the risk as well as their tolerance for different sorts of risk. **A company in Hawaii is more concerned about the risk of volcanic eruptions than a company in Chicago, but the Chicago company will have to plan for blizzards**. In those cases, determining risk tolerance is up to the executive management and board of directors. If a company chooses to ignore or accept risk, exposing workers to asbestos, for example, it puts the company in a position of tremendous liability. 
+在根据风险轻重缓急做出决策时，组织必须评估风险的可能性和影响，以及对不同风险的承受能力。**夏威夷的公司比芝加哥的公司更担心火山爆发的风险，但芝加哥的公司必须为暴风雪制定计划**。在这种情况下，决定风险承受能力的是执行管理层和董事会。如果公司选择忽视或接受风险，例如让工人接触石棉，就会使公司承担巨大的责任。
 
 ### Risk Tolerance
+### 風險承受能力
 
 The perception management takes toward risk is often likened to the **entity’s appetite for risk**. **How much risk are they willing to take?** Does management welcome risk or want to avoid it? The level of risk tolerance varies across organizations, and even internally: Different departments may have different attitudes toward what is acceptable or unacceptable risk.
+管理层对风险的看法通常被比作**实体对风险的胃口**。**管理层是欢迎风险还是希望避免风险？不同组织的风险承受能力各不相同，甚至在组织内部也是如此： 对于什么是可接受的风险，什么是不可接受的风险，不同的部门可能有不同的态度。
 
 Understanding the organization and senior management’s attitude toward risk is usually the starting point for getting management to take action regarding risks. Executive management and/or the Board of Directors determines what is an acceptable level of risk for the organization. Security professionals aim to maintain the levels of risk within management’s limit of risk tolerance.
+了解组织和高级管理层对风险的态度通常是让管理层对风险采取行动的起点。执行管理层和/或董事会决定组织可接受的风险水平。安全专业人员的目标是将风险水平保持在管理层的风险承受限度之内。
 
 Often, risk tolerance is dictated by geographic location. For example, companies in Iceland plan for the risks that nearby volcanoes impose on their business. Companies that are outside the projected path of a lava flow will be at a lower risk than those directly in the path’s flow. Similarly, the likelihood of a power outage affecting the data center is a real threat in all areas of the world. In areas where thunderstorms are common, power outages may occur more than once a month, while other areas may only experience one or two power outages annually. Calculating the downtime that is likely to occur with varying lengths of downtime will help to define a company’s risk tolerance. If a company has a low tolerance of the risk of downtime, they are more likely to invest in a generator to power critical systems. A company with an even lower tolerance for downtime will invest in multiple generators with multiple fuel sources to provide a higher level of assurance that the power will not fail.
+通常，风险承受能力是由地理位置决定的。例如，冰岛的公司会对附近火山给其业务带来的风险进行规划。处于熔岩流预计路径之外的公司，其风险要低于直接处于熔岩流路径上的公司。同样，停电影响数据中心的可能性在世界所有地区都是一个真实的威胁。在雷暴天气频发的地区，停电可能每月发生一次以上，而其他地区可能每年只发生一到两次停电。计算不同时间段可能发生的停机时间，有助于确定公司的风险承受能力。如果公司对停机风险的承受能力较低，则更有可能投资发电机为关键系统供电。如果公司对停机时间的容忍度更低，则会投资多台具有多种燃料来源的发电机，以提供更高水平的电力保证。
 
 ## Module 3 Understand Security Control
-
+## 模組 3 了解安全控制
 Domain D1.3.1, D1.3.2, D1.3.3
 
 ### What are security controls? (FIBS PUB 199)
+### 什麼是安全控制？ （FIPS PUB 199）
 
 Security controls pertain to the **physical**, **technical** and **administrative mechanisms** that act as **safeguards or countermeasures prescribed for an information system to protect the confidentiality**, **integrity** **and availability of the system and its information**. The implementation of controls should **reduce risk**, hopefully to an acceptable level.
+安全控制与**物理**、**技术**和**管理机制**有关，这些机制作为**保障或为信息系统规定的反措施，以保护系统及其信息的保密性**、**完整性**和可用性**。控制措施的实施应**降低风险**，希望达到可接受的水平。
 
 * Physical control: it addresses process-based security needs using **physical hardware devices**, such as **badge readers**, **architectural features of buildings and facilities**, **and specific security actions to be taken by people**. They typically provide ways of controlling, directing or preventing the movement of people and equipment throughout a specific physical location, such as an office suite, factory or other facility. **Physical controls also provide protection and control over entry onto the land surrounding the buildings**, **parking lots or other areas that are within the organization’s control**. In most situations, physical controls are supported by technical controls as a means of incorporating them into an overall security system.
+物理控制：它利用**物理硬件设备**（如**证件阅读器**）、**建筑物和设施的**建筑特征**以及**人员采取的具体安全行动**来满足基于流程的安全需求。它们通常提供控制、指挥或防止人员和设备在特定物理位置（如办公套间、工厂或其他设施）移动的方法。**物理控制还对进入建筑物周围的土地**、**停车场或组织控制范围内的其他区域**提供保护和控制。在大多数情况下，物理控制由技术控制支持，作为将其纳入整体安全系统的一种手段。
 
 * Technical control: it (also called logical controls) is security controls that **computer systems and networks directly implement**. These controls can provide automated protection from unauthorized access or misuse, facilitate detection of security violations and support security requirements for applications and data. Technical controls can be configuration settings or parameters stored as data, managed through a software graphical user interface (GUI), or they can be hardware settings done with switches, jumper plugs or other means. However, the implementation of technical controls always requires significant operational considerations and should be consistent with the management of security within the organization. Many of these will be examined in more depth as we look at them in later sections in this chapter and in subsequent chapters.
+* 技术控制：它（也称为逻辑控制）是**计算机系统和网络直接实施的安全控制。这些控制可提供自动保护，防止未经授权的访问或滥用，便于检测安全违规行为，并支持对应用程序和数据的安全要求。技术控制可以是作为数据存储的配置设置或参数，通过软件图形用户界面（GUI）进行管理，也可以是通过开关、跳线插头或其他方式进行的硬件设置。不过，技术控制的实施总是需要大量的操作考虑，并应与组织内的安全管理保持一致。在本章后面的章节和后续章节中，我们将对其中许多技术控制措施进行更深入的研究。
 
 * Administrative control: it (also known as managerial controls) is **directives**, **guidelines** or **advisories aimed at the people within the organization**. They provide frameworks, constraints and standards for human behavior, and should cover the entire scope of the organization’s activities and its interactions with external parties and stakeholders. It is vitally important to realize that administrative controls **can and should be powerful, effective tools for achieving information security**. Even the simplest security awareness policies can be an effective control, if you can help the organization fully implement them through systematic training and practice. Many organizations are improving their overall security posture by integrating their administrative controls into the task-level activities and operational decision processes that their workforce uses throughout the day. This can be done by providing them as in-context ready reference and advisory resources, or by linking them directly into training activities. These and other techniques bring the policies to a more neutral level and away from the decision-making of only the senior executives. It also makes them immediate, useful and operational on a daily and per-task basis.
+* 行政控制：它（也称为管理控制）是针对组织内部人员的**指令**、**指南**或**建议。它们为人的行为提供框架、约束和标准，应涵盖组织活动的整个范围及其与外部各方和利益相关者的互动。认识到行政控制**能够也应该成为实现信息安全**的强大、有效的工具，这一点至关重要。即使是最简单的安全意识政策也可以成为有效的控制措施，只要你能通过系统的培训和实践帮助组织全面实施这些政策。许多组织正在通过将管理控制整合到员工日常使用的任务级活动和操作决策流程中来改善其整体安全态势。具体做法是将其作为上下文中的现成参考和咨询资源，或将其直接与培训活动联系起来。这些技术和其他技术使政策更加中立，而不再仅仅是高级管理人员的决策。这也使它们在日常和每项任务中变得即时、有用和可操作。
 
 Some examples:
 Administrative: acceptable use policy, emergency operations procedures, employee awareness training
 Physical: Badge reader, stop sign in parking lot, door lock
 Technical: access control list
+举几个例子：
+行政：可接受的使用政策、紧急行动程序、员工意识培训
+物理：读卡器、停车场停车标志、门锁
+技术：访问控制列表
 
 ## Module 4 Understand Governance and Elements and Process
-
+## 模組 4 了解治理、要素和流程
 Domain D1.5.1, D1.5.2, D1.5.3, D1.5.4
 
 ### Governance Elements
+### 治理要素
 
 When leaders and management implement the systems and structures that the organization will use to achieve its goals, they are **guided by laws and regulations created by governments to enact public policy**. **Laws and regulations guide the development of standards, which cultivate policies, which result in procedures**.
+当领导者和管理层实施组织用来实现其目标的制度和结构时，他们**以政府为制定公共政策而制定的法律法规为指导**。**法律法规指导标准的制定，而标准又促进政策的制定，最终形成程序**。
 
 * **Procedures** are the detailed steps to complete a task that support departmental or organizational policies.
 * **Policies** are put in place by organizational governance, such as executive management, to provide guidance in all activities to ensure that the organization supports industry standards and regulations.
 * **Standards** are often used by governance teams to provide a framework to introduce policies and procedures in support of regulations.
 * **Regulations** are commonly issued in the form of laws, usually from government (not to be confused with governance) and typically carry financial penalties for noncompliance.
+* 程序**是完成一项任务的详细步骤，支持部门或组织的政策。
+**政策**由组织管理部门（如执行管理层）制定，为所有活动提供指导，确保组织支持行业标准和法规。
+**标准**经常被管理团队用来提供一个框架，以引入支持法规的政策和程序。
+**法规**通常以法律的形式发布，通常由政府发布（不要与治理相混淆），通常会对违规行为进行经济处罚。
+
 
 Regulations -> Standards -> Policies -> Procedures
-
+条例 -> 标准 -> 政策 -> 程序
 ## Module 5 Understand (ISC)² Code of Ethics
+## 模块 5 理解 (ISC)² 职业道德准则
