@@ -1,53 +1,70 @@
 # L4 Network Security
-
+# L4 網路安全
 ## Module 1: Understand Computer Networking
-
+## 模組 1：了解電腦網絡
 Domain D4.1.1, D4.1.2
 
 ### What is Networking
-
+### 什麼是網絡
 A network is simply two or more computers linked together to share data, information or resources.
+网络就是将两台或多台计算机连接在一起，共享数据、信息或资源。
 
 To properly establish secure data communications, it is important to explore all of the technologies involved in computer communications. From hardware and software to protocols and encryption and beyond, there are many details, standards and procedures to be familiar with.
+要正确建立安全的数据通信，就必须探索计算机通信所涉及的所有技术。从硬件和软件到协议和加密等等，有许多细节、标准和程序需要熟悉。
 
 #### Types of Networks
-
+#### 網路類型
 There are two basic types of networks:
 
 * Local area network (LAN) - A local area network (LAN) is a network typically spanning a single floor or building. This is commonly a limited geographical area.
 * Wide area network (WAN) - Wide area network (WAN) is the term usually assigned to the long-distance connections between geographically remote networks.
+* 局域网（LAN）--局域网（LAN）通常是指横跨一个楼层或建筑物的网络。这通常是一个有限的地理区域。
+* 广域网（WAN）--广域网（WAN）通常指地理位置遥远的网络之间的长距离连接。
 
 #### Network Devices
-
+#### 網路設備
 * **Hubs** are used to connect multiple devices in a network. They’re less likely to be seen in business or corporate networks than in home networks. Hubs are wired devices and are not as smart as switches or routers.
+**集线器**用于连接网络中的多个设备。与家庭网络相比，集线器较少出现在商业或企业网络中。集线器是有线设备，不如交换机或路由器智能。
 
 * You might consider using **a switch**, or what is also known as an intelligent hub. Switches are wired devices that know the addresses of the devices connected to them and route traffic to that port/device rather than retransmitting to all devices. Offering greater efficiency for traffic delivery and improving the overall throughput of data, switches are smarter than hubs, but not as smart as routers. Switches can also create separate broadcast domains when used to create VLANs, which will be discussed later.
+* 您可以考虑使用**交换机**，或也称为智能集线器的设备。交换机是一种有线设备，它知道与其连接的设备的地址，并将流量路由到该端口/设备，而不是向所有设备重新传输。交换机比集线器更智能，但不如路由器智能，它能提供更高的流量传输效率，提高数据的整体吞吐量。当用于创建 VLAN 时，交换机还可以创建独立的广播域，这将在后面讨论。
 
 * **Routers** are used to control traffic flow on networks and are often used to connect similar networks and control traffic flow between them. Routers can be wired or wireless and can connect multiple switches. Smarter than hubs and switches, routers determine the most efficient “route” for the traffic to flow across the network.
+* 路由器***用于控制网络上的流量，通常用于连接类似的网络并控制它们之间的流量。路由器可以是有线的，也可以是无线的，还可以连接多个交换机。路由器比集线器和交换机更智能，它能为网络中的流量确定最有效的 "路径"。
 
 * **Firewalls** are essential tools in managing and controlling network traffic and protecting the network. A firewall is a network device used to filter traffic. It is typically deployed between a private network and the internet, but it can also be deployed between departments (segmented networks) within an organization (overall network). Firewalls filter traffic based on a defined set of rules, also called filters or access control lists.
+**防火墙**是管理和控制网络流量以及保护网络的重要工具。防火墙是一种用于过滤流量的网络设备。它通常部署在专用网络和互联网之间，但也可以部署在组织（整体网络）内的部门（分段网络）之间。防火墙根据一组定义的规则（也称为过滤器或访问控制列表）过滤流量。
 
 * A **server** is a computer that provides information to other computers on a network. Some common servers are web servers, email servers, print servers, database servers and file servers. All of these are, by design, networked and accessed in some way by a client computer. Servers are usually secured differently than workstations to protect the information they contain.
+** 服务器**是向网络上其他计算机提供信息的计算机。常见的服务器包括网络服务器、电子邮件服务器、打印服务器、数据库服务器和文件服务器。根据设计，所有这些服务器都是联网的，并以某种方式被客户端计算机访问。服务器的安全保护通常不同于工作站，以保护其包含的信息。
 
 * **Endpoints** are the ends of a network communication link. One end is often at a server where a resource resides, and the other end is often a client making a request to use a network resource. An endpoint can be another server, desktop workstation, laptop, tablet, mobile phone or any other end user device.
+** 端点**是网络通信链路的两端。一端通常是资源所在的服务器，另一端通常是提出使用网络资源请求的客户端。端点可以是另一台服务器、台式工作站、笔记本电脑、平板电脑、手机或任何其他终端用户设备。
 
 #### Other Networking Terms
-
+#### 其他網路術語
 * Ethernet (IEEE 802.3) is a standard that defines wired connections of networked devices. This standard defines the way data is formatted over the wire to ensure disparate devices can communicate over the same cables.
+* 以太网（IEEE 802.3）是一种定义网络设备有线连接的标准。该标准定义了数据通过线路进行格式化的方式，以确保不同的设备可以通过相同的电缆进行通信。
 
 * Media Access Control (MAC) Address - Every network device is assigned a Media Access Control (MAC) address. An example is 00-13-02-1F-58-F5. The first 3 bytes (24 bits) of the address denote the vendor or manufacturer of the physical network interface. No two devices can have the same MAC address in the same local network; otherwise an address conflict occurs.
+* 媒体访问控制 (MAC) 地址 - 每个网络设备都分配有一个媒体访问控制 (MAC) 地址。例如 00-13-02-1F-58-F5。地址的前 3 个字节（24 位）表示物理网络接口的供应商或制造商。在同一个本地网络中，不能有两台设备拥有相同的 MAC 地址，否则会发生地址冲突。
 
 * Internet Protocol (IP) Address - While MAC addresses are generally assigned in the firmware of the interface, IP hosts associate that address with a unique logical address. This logical IP address represents the network interface within the network and can be useful to maintain communications when a physical device is swapped with new hardware. Examples are 192.168.1.1 and 2001:db8::ffff:0:1.
 
-### Networking Models
 
+### Networking Models
+### 網路模型
 Many different models, architectures and standards exist that provide ways to interconnect different hardware and software systems with each other for the purposes of sharing information, coordinating their activities and accomplishing joint or shared tasks.
+
 
 Computers and networks emerge from the integration of communication devices, storage devices, processing devices, security devices, input devices, output devices, operating systems, software, services, data and people.
 
+
 Translating the organization’s security needs into safe, reliable and effective network systems needs to start with a simple premise. The purpose of all communications is to exchange information and ideas between people and organizations so that they can get work done.
 
+
 Those simple goals can be re-expressed in network (and security) terms such as:
+
 
 * Provide reliable, managed communications between hosts (and users)
 * Isolate functions in layers
@@ -56,7 +73,9 @@ Those simple goals can be re-expressed in network (and security) terms such as:
 * Allow layers beyond internetworking to add functionality
 * Be vendor-agnostic, scalable and resilient
 
+
 In the most basic form, a network model has at least two layers:
+
 
 * UPPER LAYER APPLICATION: also known as the host or application layer, is responsible for managing the integrity of a connection and controlling the session as well as establishing, maintaining and terminating communication sessions between two computers. It is also responsible for transforming data received from the Application Layer into a format that any system can understand. And finally, it allows applications to communicate and determines whether a remote communication partner is available and accessible.
     * APPLICATION
@@ -70,17 +89,23 @@ In the most basic form, a network model has at least two layers:
         * DATA LINK 2
         * PHYSICAL 1
 
-### Open Systems Interconnection (OSI) Model
 
+### Open Systems Interconnection (OSI) Model
+### 開放系統互連 (OSI) 模型
 The OSI Model was developed to establish a common way to describe the communication structure for interconnected computer systems. The OSI model serves as an abstract framework, or theoretical model, for how protocols should function in an ideal world, on ideal hardware. Thus, the OSI model has become a common conceptual reference that is used to understand the communication of various hierarchical components from software interfaces to physical hardware.
+
 
 The OSI model divides networking tasks into seven distinct layers. Each layer is responsible for performing specific tasks or operations with the goal of supporting data exchange (in other words, network communication) between two computers. The layers are interchangeably referenced by name or layer number. For example, Layer 3 is also known as the Network Layer. The layers are ordered specifically to indicate how information flows through the various levels of communication. Each layer communicates directly with the layer above and the layer below it. For example, Layer 3 communicates with both the Data Link (2) and Transport (4) layers.
 
+
 The Application, Presentation, and Session Layers (5-7) are commonly referred to simply as data. However, each layer has the potential to perform encapsulation (enforcement of data hiding and code hiding during all phases of software development and operational use. Bundling together data and methods is the process of encapsulation; its opposite process may be called unpacking, revealing, or using other terms. Also used to refer to taking any set of data and packaging it or hiding it in another data structure, as is common in network protocols and encryption.). Encapsulation is the addition of header and possibly a footer (trailer) data by a protocol used at that layer of the OSI model. Encapsulation is particularly important when discussing Transport, Network and Data Link layers (2-4), which all generally include some form of header. At the Physical Layer (1), the data unit is converted into binary, i.e., 01010111, and sent across physical wires such as an ethernet cable.  
+
 
 It's worth mapping some common networking terminology to the OSI Model so you can see the value in the conceptual model.
 
+
 Consider the following examples: 
+
 
 * When someone references an image file like a JPEG or PNG, we are talking about the Presentation Layer (6). 
 * When discussing logical ports such as NetBIOS, we are discussing the Session Layer (5).
@@ -88,9 +113,12 @@ Consider the following examples:
 * When discussing routers sending packets, we are discussing the Network Layer (3). 
 * When discussing switches, bridges or WAPs sending frames, we are discussing the Data Link Layer (2).
 
+
 Encapsulation occurs as the data moves down the OSI model from Application to Physical. As data is encapsulated at each descending layer, the previous layer’s header, payload and footer are all treated as the next layer’s payload. The data unit size increases as we move down the conceptual model and the contents continue to encapsulate.  
 
+
 The inverse action occurs as data moves up the OSI model layers from Physical to Application. This process is known as de-encapsulation  (or decapsulation). The header and footer are used to properly interpret the data payload and are then discarded. As we move up the OSI model, the data unit becomes smaller. The encapsulation/de-encapsulation process is best depicted visually below: 
+
 
 |            |             |              |                 |                |
 |------------|-------------|--------------|-----------------|----------------|
@@ -103,8 +131,9 @@ The inverse action occurs as data moves up the OSI model layers from Physical to
 | 1          | Physical    |              | |||||||DATA|||  |                |
 
 ### Transmission Control Protocol/Internet Protocol (TCP/IP)
-
+### 傳輸控制協定/網際網路協定 (TCP/IP)
 The OSI model wasn’t the first or only attempt to streamline networking protocols or establish a common communications standard. In fact, the most widely used protocol today, TCP/IP, was developed in the early 1970s. The OSI model was not developed until the late 1970s. The TCP/IP protocol stack focuses on the core functions of networking.  
+
 
 ||TCP/IP Protocol Architecture Layers| |
 |-|-----------------------------------|-|
@@ -113,17 +142,21 @@ The OSI model wasn’t the first or only attempt to streamline networking protoc
 |Internet Layer    |Creates/inserts packets|
 |Network Interface Layer 	|How data moves through the network|
 
+
 The most widely used protocol suite is TCP/IP, but it is not just a single protocol; rather, it is a protocol stack comprising dozens of individual protocols. TCP/IP is a platform-independent protocol based on open standards. However, this is both a benefit and a drawback. TCP/IP can be found in just about every available operating system, but it consumes a significant amount of resources and is relatively easy to hack into because it was designed for ease of use rather than for security. 
 
+
 At the Application Layer, TCP/IP protocols include **Telnet**, File Transfer Protocol (**FTP**), Simple Mail Transport Protocol (**SMTP**), and Domain Name Service (**DNS**). The two primary Transport Layer protocols of TCP/IP are **TCP and UDP**. **TCP is a full-duplex connection-oriented protocol, whereas UDP is a simplex connectionless protocol**. In the Internet Layer, **Internet Control Message Protocol (ICMP)** is used to determine the health of a network or a specific link. **ICMP is utilized by ping, traceroute and other network management tools**. The ping utility employs ICMP echo packets and bounces them off remote systems. Thus, you can use ping to determine whether the remote system is online, whether the remote system is responding promptly, whether the intermediary systems are supporting communications, and the level of performance efficiency at which the intermediary systems are communicating.
+
 
 * Application, Presentation and Session layers at OSI model is equivalent to Application Layer at TCP/IP, and the protocol suite is: FTP, Telnet, SNMP, LPD, TFPT, SMTP, NFS, X Window.
 * Transport layer are the same between OSI model and TCP/IP model, protocol suite: TCP, UDP
 * Network layer at OSI model is equivalent to Internet layer at TCP/IP model, and protocol suite is: IGMP, IP, ICMP
 * Data link and Physical layer at OSI model is equivalent at Network Interface layer at TCP/IP, and protocol suite is: Ethernet, Fast Ethernet, Token Ring, FDDI
 
-### Base concepts
 
+### Base concepts
+### 基本概念
 * Switch: A device that routes traffic to the port of a known device
 * Server: A computer that provides information to other computers
 * Firewall: A device that filters network traffic based on a defined set of rules
@@ -131,15 +164,20 @@ At the Application Layer, TCP/IP protocols include **Telnet**, File Transfer Pro
 * IP Address: Logical address representing the network interface
 * MAC Address: Address that denotes the vendor or manufactures of the physical network interface
 
-### Internet Protocol (IPv4 and IPv6)
 
+### Internet Protocol (IPv4 and IPv6)
+### 網際網路協定（IPv4 和 IPv6）
 IPv4 provides a 32-bit address space. IPv6 provides a 128-bit address space. The first one is exhausted nowadays, but it is still used because of the NAT technology. 32 bits means 4 octets of 8 bits, which is represented in a dotted decimal notation such as 192.168.0.1, which means in binary notation 11000000 10101000 00000000 00000001
+
 
 IP hosts/devices associate an address with a unique logical address. An IPv4 address is expressed as four octets separated by a dot (.), for example, 216.12.146.140. Each octet may have a value between 0 and 255. However, **0 is the network itself (not a device on that network), and 255 is generally reserved for broadcast purposes**. Each address is subdivided into two parts: **the network number and the host**. The network number assigned by an external organization, such as the Internet Corporation for Assigned Names and Numbers (ICANN), represents the organization’s network. The host represents the network interface within the network.  
 
+
 **To ease network administration, networks are typically divided into subnets**. Because subnets cannot be distinguished with the addressing scheme discussed so far, a separate mechanism, **the subnet mask**, is used to define the part of the address used for the subnet. The mask is usually converted to decimal notation like 255.255.255.0. **With the ever-increasing number of computers and networked devices, it is clear that IPv4 does not provide enough addresses for our needs.** To overcome this shortcoming, **IPv4 was sub-divided into public and private address ranges.** Public addresses are limited with IPv4, but this issue was addressed in part with private addressing. Private addresses can be shared by anyone, and it is highly likely that everyone on your street is using the same address scheme.  
 
+
 The nature of the addressing scheme established by IPv4 meant that network designers had to start thinking in terms of IP address reuse. IPv4 facilitated this in several ways, such as its creation of the private address groups; this allows every LAN in every SOHO (small office, home office) situation to use addresses such as 192.168.2.xxx for its internal network addresses, without fear that some other system can intercept traffic on their LAN. This table shows the private addresses available for anyone to use:
+
 
 | RANGE |
 |-------|
