@@ -136,32 +136,42 @@ Another implementation of segregation of duties is dual control. This would appl
 ### How Users Are Provisioned
 ### 如何設定用戶
 Other situations that call for provisioning new user accounts or changing privileges include: 
+其他需要配置新使用者帳戶或變更權限的情況包括：
 
 * **A new employee**: When a new employee is hired, the hiring manager sends a request to the security administrator to create a new user ID. This request authorizes creation of the new ID and provides instructions on appropriate access levels. Additional authorization may be required by company policy for elevated permissions. 
+** 新员工**： 新员工入职时，招聘经理会向安全管理员发出创建新用户 ID 的请求。该请求授权创建新 ID，并提供有关适当访问级别的说明。根据公司政策，可能需要额外授权以获得更高的权限。
 
 * **Change of position**: When an employee has been promoted, their permissions and access rights might change as defined by the new role, which will dictate any added privileges and updates to access. At the same time, any access that is no longer needed in the new job will be removed. 
+** 职位变更**： 员工晋升后，其权限和访问权可能会根据新的角色发生变化，这将决定访问权限的增加和更新。同时，新工作不再需要的任何访问权限也将被删除。
 
 * **Separation of employment**: When employees leave the company, depending on company policy and procedures, their accounts must be disabled after the termination date and time. It is recommended that accounts be disabled for a period before they are deleted to preserve the integrity of any audit trails or files that may be owned by the user. Since the account will no longer be used, it should be removed from any security roles or additional access profiles. This protects the company, so the separated employee is unable to access company data after separation, and it also protects them because their account cannot be used by others to access data.
+** 离职**： 员工离职时，根据公司政策和程序，其账户必须在终止日期和时间之后禁用。建议在删除账户前禁用一段时间，以保持用户可能拥有的任何审计跟踪或文件的完整性。由于不再使用账户，因此应将其从任何安全角色或附加访问配置文件中删除。这样做既能保护公司，使离职员工在离职后无法访问公司数据，又能保护自己，因为他人无法使用其账户访问数据。
 
 ## Module 2: Understand Physical Access Controls
-
+## 模組 2：了解實體存取控制
 Domain D3.1, D3.1.1, D3.1.2
 
 ### What Are Physical Security Controls? 
+### 什麼是實體安全控制？
 
 Physical access controls are items you can physically touch, which include physical mechanisms deployed to prevent, monitor, or detect direct contact with systems or areas within a facility. Examples of physical access controls include security guards, fences, motion detectors, locked doors/gates, sealed windows, lights, cable protection, laptop locks, badges, swipe cards, guard dogs, cameras, mantraps/turnstiles, and alarms.
+物理访问控制是可以实际接触到的项目，包括用于防止、监控或检测与设施内系统或区域直接接触的物理机制。物理访问控制的例子包括安全警卫、围栏、移动探测器、上锁的门/闸、密封的窗、灯、电缆保护、笔记本电脑锁、徽章、刷卡器、看门狗、摄像头、密码锁/旋转门和警报器。
 
 Physical access controls are necessary to protect the assets of a company, including its most important asset, people. When considering physical access controls, the security of the personnel always comes first, followed by securing other physical assets.
+要保护公司的资产，包括最重要的资产--人员，就必须要有实体访问控制。在考虑物理访问控制时，人员的安全始终是第一位的，其次才是其他有形资产的安全。
 
 ### Why Have Physical Security Controls?
+### 為什麼要有實體安全控制？
 
 Physical access controls include **fences, barriers, turnstiles, locks and other features that prevent unauthorized individuals from entering a physical site**, such as a workplace. This is to protect not only physical assets such as computers from being stolen, but also to protect the health and safety of the personnel inside. 
 
 ### Types of Physical Access Controls
+### 實體存取控制的類型
 
 Many types of physical access control mechanisms can be deployed in an environment to control, monitor and manage access to a facility. These range from deterrents to detection mechanisms. Each area requires unique and focused physical access controls, monitoring and prevention mechanisms.
 
 #### Badge Systems and Gate Entry
+#### 徽章系統與大門入口
 
 Physical security controls for human traffic are often done with technologies such as turnstiles, mantraps and remotely or system-controlled door locks. For the system to identify an authorized employee, an access control system needs to have some form of enrollment station used to assign and activate an access control device. Most often, a badge is produced and issued with the employee’s identifiers, with the enrollment station giving the employee specific areas that will be accessible. In high-security environments, enrollment may also include biometric characteristics. In general, an access control system compares an individual’s badge against a verified database. If authenticated, the access control system sends output signals allowing authorized personnel to pass through a gate or a door to a controlled area. The systems are typically integrated with the organization’s logging systems to document access activity (authorized and unauthorized)
 
