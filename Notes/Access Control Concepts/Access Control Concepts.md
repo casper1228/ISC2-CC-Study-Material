@@ -1,98 +1,140 @@
 # L3 Access Control Concepts
-
+# L3 存取控制概念
 ## Introduction
-
+＃＃ 介紹
 Types of access control, physical and logical controls and how they are combined to strengthen the overall security of an organization.
-
+存取控制、實體和邏輯控制的類型以及如何將它們組合起來以增強組織的整體安全性。
 ## Module 1 Understand Access Control Concepts
-
+## 模組 1 了解存取控制概念
 Domain D3.1, D3.1.3, D3.1.5, D3.2, D3.2.1, D3.2.2, D3.2.5
 
 ### What is Security Control?
-
+### 什麼是安全控制？
 Access control involves **limiting what objects can be available to what subjects according to what rules**.
-
+存取控制涉及**根據什麼規則限制哪些物件可以供哪些主體使用**。
 ### Controls Overview
-
+### 控制概述
 Earlier in this course we looked at security principles through foundations of risk management, governance, incident response, business continuity and disaster recovery. But in the end, security all comes down to, **“who can get access to organizational assets (buildings, data, systems, etc.) and what can they do when they get access?”**
+在本課程的前面部分，我們透過風險管理、治理、事件應變、業務連續性和災難復原的基礎來了解安全原則。 但最終，安全性歸結為，**「誰可以訪問組織資產（建築物、數據、系統等）以及他們獲得訪問權限後可以做什麼？」**
 
 Access controls **are not just about restricting access** to information systems and data, **but also about allowing access**. It is about granting the appropriate level of access to authorized personnel and processes and denying access to unauthorized functions or individuals.
+访问控制***不仅仅是限制***对信息系统和数据的访问，也***是允许***访问。它是指对授权人员和程序授予适当级别的访问权限，并拒绝未经授权的功能或个人访问。
 
 Access is based on three elements:
+訪問基於三個要素：
 
 * subjects: **any entity that requests access to our assets**. The entity requesting access may be a **user**, a **client**, a **process** or a **program**, for example. A subject is the initiator of a request for service; therefore, a subject is referred to as “active.” A subject:
     * Is a user, a process, a procedure, a client (or a server), a program, a device such as an endpoint, workstation, smartphone or removable storage device with onboard firmware.
     * Is active: It initiates a request for access to resources or services.
     * Requests a service from an object.
     * Should have a level of clearance (permissions) that relates to its ability to successfully access services or resources.
-      
+* 主体： **请求访问我们资产的任何实体**。例如，请求访问的实体可以是**用户**、**客户**、**进程**或**程序**。主体是服务请求的发起者；因此，主体被称为 "主动"。主体：
+    * 是用户、进程、程序、客户端（或服务器）、程序、设备（如终端、工作站、智能手机或带有板载固件的移动存储设备）。
+    * 处于活动状态： 发起访问资源或服务的请求。
+    * 请求对象提供服务。
+    * 应具有与其成功访问服务或资源的能力相关的许可级别（权限）。
+
 * **Objects:** Objects represent the assets or resources that subjects seek to access within an organization. These assets can take various forms, including data stored in databases or files, systems such as servers or network devices, applications used for specific purposes, physical spaces like offices or storage rooms, or any other resource that holds value to the organization. Objects serve as the targets of access requests initiated by subjects, and their protection is essential for maintaining the security and integrity of the organization's assets.
+** 对象：** 对象代表主体在组织内试图访问的资产或资源。这些资产的形式多种多样，包括存储在数据库或文件中的数据、服务器或网络设备等系统、用于特定目的的应用程序、办公室或储藏室等物理空间，或对组织有价值的任何其他资源。对象是主体发起的访问请求的目标，保护对象对于维护组织资产的安全性和完整性至关重要。
 
 * **Rules:** Rules form the foundation of the access control framework by defining the conditions under which access is granted or denied to objects. These rules establish the criteria and parameters that govern the access permissions and restrictions within the organization's environment. They can encompass a wide range of factors, including user roles and responsibilities, permissions levels, time-based access policies, location-based restrictions, and other attributes relevant to the organization's security policies. Rules ensure that access is managed in a consistent, predictable, and enforceable manner, helping to safeguard sensitive information, prevent unauthorized access, and mitigate security risks effectively.
+** 规则：** 规则是访问控制框架的基础，它定义了允许或拒绝对象访问的条件。这些规则确立了管理组织环境中访问权限和限制的标准和参数。这些规则可涵盖多种因素，包括用户角色和职责、权限级别、基于时间的访问策略、基于位置的限制以及与组织安全策略相关的其他属性。规则可确保以一致、可预测和可执行的方式管理访问，帮助保护敏感信息，防止未经授权的访问，并有效降低安全风险。
 
 ### Controls Assessments
-
+### 控制評估
 Risk reduction depends on the effectiveness of the control. It must apply to the current situation and adapt to a changing environment. 
+風險降低取決於控制的有效性。 它必須適用於當前情況並適應不斷變化的環境。
 
 ### Defense in Depth
-
+### 縱深防禦
 We are looking at all access permissions including building access, access to server rooms, access to networks and applications and utilities. These are all implementations of access control and are part of **a layered defense strategy**, **also known as defense in depth**, developed by an organization.
+我们正在研究所有的访问权限，包括楼宇访问、服务器机房访问、网络访问以及应用程序和公用设施访问。这些都是访问控制的实施，也是企业制定的**分层防御战略**（又称纵深防御**）的一部分。
 
 **Defense in depth describes an information security strategy that integrates people, technology and operations capabilities to establish variable barriers across multiple layers and missions of the organization.** It applies multiple countermeasures in a layered fashion to fulfill security objectives. Defense in depth should be implemented to prevent or deter a cyberattack, but it cannot guarantee that an attack will not occur. 
+**纵深防御描述了一种信息安全战略，它整合了人员、技术和操作能力，在组织的多个层面和任务中建立可变屏障。实施纵深防御可预防或阻止网络攻击，但不能保证攻击不会发生。
 
 A technical example of defense in depth, in which multiple layers of technical controls are implemented, **is when a username and password are required for logging in to your account, followed by a code sent to your phone to verify your identity**. **This is a form of multi-factor authentication using methods on two layers, something you have and something you know.** The combination of the two layers is much more difficult for an adversary to obtain than either of the authentication codes individually. 
+实施多层技术控制的深度防御的一个技术范例是**登录账户时需要用户名和密码，然后向手机发送验证码以验证身份**。**这是一种多因素身份验证，使用了两层方法，即你拥有的东西和你知道的东西**。
 
 Another example of multiple technical layers is when additional firewalls are used to separate untrusted networks with differing security requirements, such as the internet from trusted networks that house servers with sensitive data in the organization. When a company has information at multiple sensitivity levels, it might require the network traffic to be validated by rules on more than one firewall, with the most sensitive information being stored behind multiple firewalls.
+多技术层的另一个例子是使用额外的防火墙来分隔具有不同安全要求的不信任网络，如互联网和存放企业敏感数据服务器的可信网络。当公司拥有多个敏感级别的信息时，可能会要求网络流量通过不止一个防火墙上的规则进行验证，并将最敏感的信息存储在多个防火墙后面。
 
 For a non-technical example, consider the multiple layers of access required to get to the actual data in a data center. First, a lock on the door provides a physical barrier to access the data storage devices. Second, a technical access rule prevents access to the data via the network. Finally, a policy, or administrative control defines the rules that assign access to authorized individuals.
+举一个非技术性的例子，考虑一下访问数据中心实际数据所需的多层访问权限。首先，门锁提供了访问数据存储设备的物理屏障。其次，技术访问规则防止通过网络访问数据。最后，政策或管理控制定义了将访问权限分配给授权个人的规则。
 
 ### Principle of Least Privilege
-
+### 最小特權原則
 The Principle of Least Privilege (NIST SP 800-179) is a standard of permitting only minimum access necessary for users or programs to fulfill their function. Users are provided access only to the systems and programs they need to perform their specific job or tasks. 
+最小权限原则（NIST SP 800-179）是一项标准，即只允许用户或程序执行其功能所需的最低访问权限。用户只能访问其执行特定工作或任务所需的系统和程序。
 
 To preserve the confidentiality of information and ensure that it is only available to personnel who are authorized to see it, **we use privileged access management**, **which is based on the principle of least privilege**. **That means each user is granted access only to the items they need and nothing further**.  
+为了维护信息的机密性，并确保只有获得授权的人员才能看到这些信息，**我们采用特权访问管理**，**该管理基于最小特权原则**。**这意味着每个用户只能访问他们需要的项目，而不能访问更多**。
 
 For example, only individuals working in billing will be allowed to view consumer financial data, and even fewer individuals will have the authority to change or delete that data. This maintains confidentiality and integrity while also allowing availability by providing administrative access with an appropriate password or sign-on that proves the user has the appropriate permissions to access that data.  
+例如，只有从事计费工作的人员才有权查看消费者财务数据，而有权更改或删除该数据的人员则更少。这样既能保持保密性和完整性，又能通过适当的密码或登录提供管理访问权限，证明用户拥有访问该数据的适当权限，从而实现可用性。 
 
 Sometimes it is necessary to allow users to access the information via a temporary or limited access, for instance, for a specific time period or just within normal business hours. Or access rules can limit the fields that the individuals can have access to. One example is a healthcare environment. Some workers might have access to patient data but not their medical data. Individual doctors might have access only to data related to their own patients. In some cases, this is regulated by law, such as HIPAA in the United States, and by specific privacy laws in other countries. 
+有时，有必要允许用户通过临时或有限的访问权限来访问信息，例如，在特定时间段内或仅在正常工作时间内。或者，访问规则可以限制个人可以访问的字段。医疗环境就是一个例子。一些工作人员可能可以访问病人数据，但不能访问他们的医疗数据。个别医生可能只能访问与自己病人有关的数据。在某些情况下，这是由法律规定的，如美国的 HIPAA 和其他国家的特定隐私法。
 
 Systems often monitor access to private information, and if logs indicate that someone has attempted to access a database without the proper permissions, that will automatically trigger an alarm. The security administrator will then record the incident and alert the appropriate people to take action.  
+系统通常会监控对私人信息的访问，如果日志显示有人试图在没有适当权限的情况下访问数据库，就会自动触发警报。安全管理员会记录下这一事件，并提醒相关人员采取行动。 
 
 The more critical information a person has access to, the greater the security should be around that access. They should definitely have multi-factor authentication, for instance. 
+一个人可以访问的关键信息越多，访问的安全性就越高。例如，他们肯定应该有多因素身份验证。
 
 ### Privileged Access Management
-
+### 特權存取管理
 Privileged access management provides the first and perhaps most familiar use case. Consider a human user identity that is granted various create, read, update, and delete privileges on a database. Without privileged access management, the system’s access control would have those privileges assigned to the administrative user in a static way, effectively “on” 24 hours a day, every day. Security would be dependent upon the login process to prevent misuse of that identity. Just-in-time privileged access management, by contrast, includes role-based specific subsets of privileges that only become active in real time when the identity is requesting the use of a resource or service. 
+特权访问管理提供了第一个可能也是最熟悉的使用案例。假设一个人类用户身份被授予在数据库上创建、读取、更新和删除的各种权限。如果没有特权访问管理，系统的访问控制就会以静态的方式将这些权限分配给管理用户，实际上就是每天 24 小时 "开机"。安全性将取决于登录过程，以防止滥用该身份。与此相反，即时特权访问管理包括基于角色的特定特权子集，只有在身份要求使用资源或服务时才会实时激活。
 
 ### Privileged Accounts
+### 特權帳戶
 
 Privileged accounts are those with permissions beyond those of normal users, such as managers and administrators. Broadly speaking, these accounts have **elevated privileges** and are used by many different classes of users, including: 
+特权账户是指拥有超出普通用户权限的账户，如经理和管理员。广义上讲，这些账户拥有**高权限**，被许多不同类别的用户使用，包括： 
 
 * Systems administrators, who have the principal responsibilities for operating systems, applications deployment and performance management. 
 * Help desk or IT support staff, who often need to view or manipulate endpoints, servers and applications platforms by using privileged or restricted operations. 
 * Security analysts, who may require rapid access to the entire IT infrastructure, systems, endpoints and data environment of the organization. 
+* 系统管理员，主要负责操作系统、应用程序部署和性能管理。
+* 服务台或 IT 支持人员，他们经常需要通过使用权限或受限操作来查看或操作端点、服务器和应用程序平台。
+* 安全分析人员，他们可能需要快速访问组织的整个 IT 基础设施、系统、端点和数据环境。
 
 Other classes of privileged user accounts may be created on a per-client or per-project basis, to allow a member of that project or client service team to have greater control over data and applications. These few examples indicate that organizations often need to delegate the capability to manage and protect information assets to various managerial, supervisory, support or leadership people, with differing levels of authority and responsibility. This delegation, of course, should be contingent upon trustworthiness, since misuse or abuse of these privileges could lead to harm for the organization and its stakeholders. 
+其他类别的特权用户账户可按客户或项目创建，以允许该项目或客户服务团队的成员对数据和应用程序拥有更大的控制权。以上几个例子表明，企业往往需要将管理和保护信息资产的能力下放给不同级别的管理、监督、支持或领导人员，并赋予他们不同的权力和责任。当然，这种授权应该以值得信赖为前提，因为误用或滥用这些特权可能会对组织及其利益相关者造成伤害。
 
 Typical measures used for moderating the potential for elevated risks from misuse or abuse of privileged accounts include the following: 
+用于缓和因误用或滥用特权账户而导致潜在风险升高的典型措施包括以下几种：
 
     * More extensive and detailed logging than regular user accounts. The record of privileged actions is vitally important, as both a deterrent (for privileged account holders that might be tempted to engage in untoward activity) and an administrative control (the logs can be audited and reviewed to detect and respond to malicious activity). 
+        * 日志记录比普通用户账户更广泛、更详细。 特权行为的记录至关重要，既能起到威慑作用（对可能会从事不轨活动的特权账户持有者而言），又能起到管理控制作用（可对日志进行审计和审查，以发现和应对恶意活动）。
+   
     * More stringent access control than regular user accounts. As we will see emphasized in this course, even nonprivileged users should be required to use MFA methods to gain access to organizational systems and networks. Privileged users—or more accurately, highly trusted users with access to privileged accounts—should be required to go through additional or more rigorous authentication prior to those privileges. Just-in-time identity should also be considered as a way to restrict the use of these privileges to specific tasks and the times in which the user is executing them. 
+      * 比普通用户账户更严格的访问控制。正如我们将在本课程中强调的那样，即使是非特权用户也应被要求使用 MFA 方法来访问组织系统和网络。特权用户--或者更准确地说，可以访问特权账户的高信任度用户--应被要求在获得这些特权之前通过额外或更严格的身份验证。此外，还应考虑将及时身份验证作为一种方法，将这些特权的使用限制在特定任务和用户执行任务的时间范围内。
+      
     * Deeper trust verification than regular user accounts. Privileged account holders should be subject to more detailed background checks, stricter nondisclosure agreements and acceptable use policies, and be willing to be subject to financial investigation. Periodic or event-triggered updates to these background checks may also be in order, depending on the nature of the organization’s activities and the risks it faces. 
+     * 比普通用户账户更严格的信任验证。 特权账户持有人应接受更详细的背景调查、更严格的保密协议和可接受的使用政策，并愿意接受财务调查。根据组织活动的性质和面临的风险，定期或由事件触发更新这些背景调查也是有必要的。
+     
     * More auditing than regular user accounts. Privileged account activity should be monitored and audited at a greater rate and extent than regular usage. 
+ * 比普通用户账户更多的审计。 对特权账户活动的监控和审计力度和范围应大于普通用户账户。
 
 ### Segregation of Duties 
+### 職責分離
 
 A core element of authorization is the **principle of segregation of duties** (also known as separation of duties). **Segregation of duties is based on the security practice that no one person should control an entire high-risk transaction from start to finish**. **Segregation of duties breaks the transaction into separate parts and requires a different person to execute each part of the transaction**. For example, an employee may submit an invoice for payment to a vendor (or for reimbursement to themselves), but it must be approved by a manager prior to payment; in another instance, almost anyone may submit a proposal for a change to a system configuration, but the request must go through technical and management review and gain approval, before it can be implemented.
+授权的一个核心要素是**职责分离原则**（也称为职责分离）。**职责分离是基于这样一种安全惯例：不应由一个人自始至终控制整个高风险交易**。**职责分离将交易分成不同的部分，并要求由不同的人来执行交易的每个部分**。例如，员工可以提交一张发票，要求供应商付款（或报销给自己），但在付款前必须得到经理的批准；在另一个例子中，几乎任何人都可以提交一份更改系统配置的建议，但该请求必须经过技术和管理审查并获得批准后才能实施。
 
 These steps can prevent fraud or detect an error in the process before implementation. It could be that the same employee might be authorized to originally submit invoices regarding one set of activities, but not approve them, and yet also have approval authority but not the right to submit invoices on another. It is possible, of course, that two individuals can willfully work together to bypass the segregation of duties, so that they could jointly commit fraud. This is called collusion.
+这些步骤可以防止欺诈或在实施前发现流程中的错误。同一员工可能被授权就某项活动提交发票，但无权审批，但也有审批权，但无权就另一项活动提交发票。当然，也有可能是两个人故意合作，绕过职责分工，共同实施欺诈。这就是所谓的串通。
 
 Another implementation of segregation of duties is dual control. This would apply at a bank where there are two separate combination locks on the door of the vault. Some personnel know one of the combinations and some know the other, but no one person knows both combinations. Two people must work together to open the vault; thus, the vault is under dual control. 
+职责分离的另一种实施方式是双重控制。在一家银行，保险库的门上有两把不同的密码锁。有些人知道其中一个密码，有些人知道另一个，但没有一个人同时知道两个密码。两个人必须合作才能打开保险库；因此，保险库处于双重控制之下。
 
 **The two-person rule is a security strategy that requires a minimum of two people to be in an area together, making it impossible for a person to be in the area alone**. Many access control systems prevent an individual cardholder from entering a selected high-security area unless accompanied by at least one other person. Use of the two-person rule can help reduce insider threats to critical areas by requiring at least two individuals to be present at any time. It is also used for life safety within a security area; if one person has a medical emergency, there will be assistance present.
+**两人规则是一种安全策略，要求至少两人一起进入一个区域，使一个人无法单独进入该区域**。许多门禁控制系统会阻止持卡人进入选定的高安全区域，除非至少有另一人陪同。两人规则要求任何时候都至少有两人在场，有助于减少内部人员对重要区域的威胁。它还可用于安全区域内的生命安全；如果一个人出现医疗紧急情况，将有援助人员在场。
 
 ### How Users Are Provisioned
-
+### 如何設定用戶
 Other situations that call for provisioning new user accounts or changing privileges include: 
 
 * **A new employee**: When a new employee is hired, the hiring manager sends a request to the security administrator to create a new user ID. This request authorizes creation of the new ID and provides instructions on appropriate access levels. Additional authorization may be required by company policy for elevated permissions. 
