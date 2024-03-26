@@ -50,21 +50,21 @@ There are two basic types of networks:
 * 媒体访问控制 (MAC) 地址 - 每个网络设备都分配有一个媒体访问控制 (MAC) 地址。例如 00-13-02-1F-58-F5。地址的前 3 个字节（24 位）表示物理网络接口的供应商或制造商。在同一个本地网络中，不能有两台设备拥有相同的 MAC 地址，否则会发生地址冲突。
 
 * Internet Protocol (IP) Address - While MAC addresses are generally assigned in the firmware of the interface, IP hosts associate that address with a unique logical address. This logical IP address represents the network interface within the network and can be useful to maintain communications when a physical device is swapped with new hardware. Examples are 192.168.1.1 and 2001:db8::ffff:0:1.
-
+* 互联网协议（IP）地址 - MAC 地址通常在接口固件中分配，而 IP 主机则将该地址与唯一的逻辑地址关联起来。该逻辑 IP 地址代表网络中的网络接口，当物理设备更换为新硬件时，该地址有助于保持通信。例如 192.168.1.1 和 2001:db8::fffff:0:1。
 
 ### Networking Models
 ### 網路模型
 Many different models, architectures and standards exist that provide ways to interconnect different hardware and software systems with each other for the purposes of sharing information, coordinating their activities and accomplishing joint or shared tasks.
-
+目前有许多不同的模式、架构和标准，提供了将不同的硬件和软件系统相互连接起来的方法，以便共享信息、协调活动和完成联合或共享任务。
 
 Computers and networks emerge from the integration of communication devices, storage devices, processing devices, security devices, input devices, output devices, operating systems, software, services, data and people.
-
+计算机和网络是通信设备、存储设备、处理设备、安全设备、输入设备、输出设备、操作系统、软件、服务、数据和人员的集成。
 
 Translating the organization’s security needs into safe, reliable and effective network systems needs to start with a simple premise. The purpose of all communications is to exchange information and ideas between people and organizations so that they can get work done.
-
+将组织的安全需求转化为安全、可靠和有效的网络系统，需要从一个简单的前提开始。所有通信的目的都是为了在人员和组织之间交换信息和想法，以便完成工作。
 
 Those simple goals can be re-expressed in network (and security) terms such as:
-
+这些简单的目标可以用网络（和安全）术语重新表述，例如
 
 * Provide reliable, managed communications between hosts (and users)
 * Isolate functions in layers
@@ -72,53 +72,73 @@ Those simple goals can be re-expressed in network (and security) terms such as:
 * Standardize routing, addressing and control
 * Allow layers beyond internetworking to add functionality
 * Be vendor-agnostic, scalable and resilient
-
+* 在主机（和用户）之间提供可靠、可管理的通信
+* 分层隔离功能
+* 使用数据包（OSI 模型第 3 层的数据表示）作为通信的基础
+* 路由、寻址和控制标准化
+* 允许互联网络以外的层增加功能
+* 与供应商无关，具有可扩展性和弹性
 
 In the most basic form, a network model has at least two layers:
-
+最基本的网络模型至少有两层：
 
 * UPPER LAYER APPLICATION: also known as the host or application layer, is responsible for managing the integrity of a connection and controlling the session as well as establishing, maintaining and terminating communication sessions between two computers. It is also responsible for transforming data received from the Application Layer into a format that any system can understand. And finally, it allows applications to communicate and determines whether a remote communication partner is available and accessible.
     * APPLICATION
         * APPLICATION 7
         * PRESENTATION 6
         * SESSION 5
+* 上层应用层：又称主机层或应用层，负责管理连接的完整性和控制会话，以及建立、维护和终止两台计算机之间的通信会话。它还负责将从应用层接收到的数据转换成任何系统都能理解的格式。最后，它允许应用程序进行通信，并确定远程通信伙伴是否可用和可访问。
+    * 应用程序
+        * 应用 7
+        * 演示 6
+        * 会话 5
+
 * LOWER LAYER: it is often referred to as the media or transport layer and is responsible for receiving bits from the physical connection medium and converting them into a frame. Frames are grouped into standardized sizes. Think of frames as a bucket and the bits as water. If the buckets are sized similarly and the water is contained within the buckets, the data can be transported in a controlled manner. Route data is added to the frames of data to create packets. In other words, a destination address is added to the bucket. Once we have the buckets sorted and ready to go, the host layer takes over.
     * DATA TRANSPORT
         * TRANSPORT 4
         * NETWORK 3
         * DATA LINK 2
         * PHYSICAL 1
-
+* 下层：通常称为介质层或传输层，负责接收来自物理连接介质的比特并将其转换为帧。帧按标准尺寸分组。把帧看成一个桶，把比特看成水。如果水桶的大小相似，且水都装在水桶里，那么数据就能以受控的方式传输。路由数据被添加到数据帧中，形成数据包。换句话说，就是在水桶中添加目的地地址。一旦我们将水桶分类并准备就绪，主机层就会接手。
+    * 数据传输
+        * 传输 4
+        * 网络 3
+        * 数据链路 2
+        * 物理 1
 
 ### Open Systems Interconnection (OSI) Model
 ### 開放系統互連 (OSI) 模型
 The OSI Model was developed to establish a common way to describe the communication structure for interconnected computer systems. The OSI model serves as an abstract framework, or theoretical model, for how protocols should function in an ideal world, on ideal hardware. Thus, the OSI model has become a common conceptual reference that is used to understand the communication of various hierarchical components from software interfaces to physical hardware.
-
+开发 OSI 模型是为了建立一种通用的方法来描述互连计算机系统的通信结构。OSI 模型是一个抽象框架或理论模型，用于描述在理想世界中，协议应如何在理想硬件上运行。因此，OSI 模型已成为一种通用的概念参考，用于理解从软件接口到物理硬件的各种分层组件的通信。
 
 The OSI model divides networking tasks into seven distinct layers. Each layer is responsible for performing specific tasks or operations with the goal of supporting data exchange (in other words, network communication) between two computers. The layers are interchangeably referenced by name or layer number. For example, Layer 3 is also known as the Network Layer. The layers are ordered specifically to indicate how information flows through the various levels of communication. Each layer communicates directly with the layer above and the layer below it. For example, Layer 3 communicates with both the Data Link (2) and Transport (4) layers.
-
+OSI 模型将网络任务分为七个不同的层。每一层负责执行特定的任务或操作，目的是支持两台计算机之间的数据交换（换言之，网络通信）。各层可通过名称或层号互换引用。例如，第 3 层也称为网络层。各层的具体排序是为了说明信息如何在各级通信中流动。每一层都与上一层和下一层直接通信。例如，第 3 层与数据链路层 (2) 和传输层 (4) 通信。
 
 The Application, Presentation, and Session Layers (5-7) are commonly referred to simply as data. However, each layer has the potential to perform encapsulation (enforcement of data hiding and code hiding during all phases of software development and operational use. Bundling together data and methods is the process of encapsulation; its opposite process may be called unpacking, revealing, or using other terms. Also used to refer to taking any set of data and packaging it or hiding it in another data structure, as is common in network protocols and encryption.). Encapsulation is the addition of header and possibly a footer (trailer) data by a protocol used at that layer of the OSI model. Encapsulation is particularly important when discussing Transport, Network and Data Link layers (2-4), which all generally include some form of header. At the Physical Layer (1), the data unit is converted into binary, i.e., 01010111, and sent across physical wires such as an ethernet cable.  
-
+应用层、表现层和会话层（5-7）通常被简单地称为数据层。不过，在软件开发和运行使用的各个阶段，每一层都有可能执行封装（执行数据隐藏和代码隐藏）。将数据和方法捆绑在一起就是封装过程；与之相反的过程可称为拆包、揭示或使用其他术语。也可用于指将任何一组数据打包或隐藏在另一种数据结构中（如网络协议和加密中常见的数据结构）。封装是指在 OSI 模型的该层中使用的协议添加了页眉和可能的页脚（尾部）数据。在讨论传输层、网络层和数据链路层（2-4）时，封装尤为重要，这些层通常都包含某种形式的报头。在物理层（1），数据单元被转换成二进制，即 01010111，并通过以太网电缆等物理电线发送。 
 
 It's worth mapping some common networking terminology to the OSI Model so you can see the value in the conceptual model.
-
+我们不妨将一些常见的网络术语与 OSI 模型进行映射，这样你就能看到概念模型的价值所在。
 
 Consider the following examples: 
-
+请看下面的例子： 
 
 * When someone references an image file like a JPEG or PNG, we are talking about the Presentation Layer (6). 
 * When discussing logical ports such as NetBIOS, we are discussing the Session Layer (5).
 * When discussing TCP/UDP, we are discussing the Transport Layer (4).
 * When discussing routers sending packets, we are discussing the Network Layer (3). 
 * When discussing switches, bridges or WAPs sending frames, we are discussing the Data Link Layer (2).
-
+* 当有人引用 JPEG 或 PNG 等图像文件时，我们讨论的是呈现层 (6)。
+* 讨论 NetBIOS 等逻辑端口时，我们讨论的是会话层（5）。
+* 讨论 TCP/UDP 时，我们讨论的是传输层（4）。
+* 讨论路由器发送数据包时，我们讨论的是网络层（3）。
+* 讨论交换机、网桥或 WAP 发送帧时，我们讨论的是数据链路层 (2)。
 
 Encapsulation occurs as the data moves down the OSI model from Application to Physical. As data is encapsulated at each descending layer, the previous layer’s header, payload and footer are all treated as the next layer’s payload. The data unit size increases as we move down the conceptual model and the contents continue to encapsulate.  
-
+数据在 OSI 模型中从应用层向下移动到物理层时会发生封装。数据在每一层向下封装时，上一层的页眉、有效载荷和页脚都被视为下一层的有效载荷。随着概念模型的下移，数据单元的大小也在增加，内容也在不断封装。 
 
 The inverse action occurs as data moves up the OSI model layers from Physical to Application. This process is known as de-encapsulation  (or decapsulation). The header and footer are used to properly interpret the data payload and are then discarded. As we move up the OSI model, the data unit becomes smaller. The encapsulation/de-encapsulation process is best depicted visually below: 
-
+当数据从物理层向应用层的 OSI 模型层移动时，就会发生相反的动作。这一过程称为去封装（或解封装）。页眉和页脚用于正确解释数据有效载荷，然后被丢弃。随着 OSI 模型的升级，数据单元会越来越小。下面是封装/解封装过程的最佳直观描述： 
 
 |            |             |              |                 |                |
 |------------|-------------|--------------|-----------------|----------------|
@@ -130,30 +150,48 @@ The inverse action occurs as data moves up the OSI model layers from Physical to
 | 2          | Data Link   |              |  ||||||DATA||   |   <-- Footer   |
 | 1          | Physical    |              | |||||||DATA|||  |                |
 
+|            |             |              |                 |                |
+|------------|-------------|--------------|-----------------|----------------|
+| 7          | 应用程序     |              |           DATA  |                |
+| 6          | 展示        | Header -->    |         ||DATA  |                |
+| 5          | 会话        |               |        |||DATA  |                |
+| 4          | 传输        |               |       ||||DATA  |                |
+| 3          | 网络        |               |       ||||DATA  |                |
+| 2          | 数据链路    |                |    ||||||DATA|| | <-- 页脚       |
+| 1          | 物理        |                | |||||||DATA|||  |                |
+
 ### Transmission Control Protocol/Internet Protocol (TCP/IP)
 ### 傳輸控制協定/網際網路協定 (TCP/IP)
 The OSI model wasn’t the first or only attempt to streamline networking protocols or establish a common communications standard. In fact, the most widely used protocol today, TCP/IP, was developed in the early 1970s. The OSI model was not developed until the late 1970s. The TCP/IP protocol stack focuses on the core functions of networking.  
-
+OSI 模型并不是简化网络协议或建立通用通信标准的首次或唯一尝试。事实上，当今使用最广泛的协议 TCP/IP 也是在 20 世纪 70 年代初开发的。OSI 模型直到 20 世纪 70 年代末才开发出来。TCP/IP 协议栈侧重于网络的核心功能。 
 
 ||TCP/IP Protocol Architecture Layers| |
 |-|-----------------------------------|-|
+||TCP/IP 協定架構層| |
+|-|----------------------------------------------- -|-|
 |Application Layer |Defines the protocols for the transport layer|
 |Transport Layer   |Permits data to move among devices|
 |Internet Layer    |Creates/inserts packets|
 |Network Interface Layer 	|How data moves through the network|
-
+|应用层定义传输层协议
+|传输层允许数据在设备间移动
+|创建/插入数据包
+|网络接口层 |数据如何在网络中移动
 
 The most widely used protocol suite is TCP/IP, but it is not just a single protocol; rather, it is a protocol stack comprising dozens of individual protocols. TCP/IP is a platform-independent protocol based on open standards. However, this is both a benefit and a drawback. TCP/IP can be found in just about every available operating system, but it consumes a significant amount of resources and is relatively easy to hack into because it was designed for ease of use rather than for security. 
-
+使用最广泛的协议套件是 TCP/IP，但它并不仅仅是一个协议，而是由数十个单独协议组成的协议栈。TCP/IP 是一种基于开放标准、与平台无关的协议。然而，这既是优点也是缺点。几乎所有可用的操作系统中都有 TCP/IP 协议，但它消耗大量资源，而且相对容易被黑客入侵，因为它的设计初衷是为了方便使用，而不是为了安全。
 
 At the Application Layer, TCP/IP protocols include **Telnet**, File Transfer Protocol (**FTP**), Simple Mail Transport Protocol (**SMTP**), and Domain Name Service (**DNS**). The two primary Transport Layer protocols of TCP/IP are **TCP and UDP**. **TCP is a full-duplex connection-oriented protocol, whereas UDP is a simplex connectionless protocol**. In the Internet Layer, **Internet Control Message Protocol (ICMP)** is used to determine the health of a network or a specific link. **ICMP is utilized by ping, traceroute and other network management tools**. The ping utility employs ICMP echo packets and bounces them off remote systems. Thus, you can use ping to determine whether the remote system is online, whether the remote system is responding promptly, whether the intermediary systems are supporting communications, and the level of performance efficiency at which the intermediary systems are communicating.
-
+在应用层，TCP/IP 协议包括 **Telnet**、文件传输协议 (**FTP**)、简单邮件传输协议 (**SMTP**) 和域名服务 (**DNS**)。TCP/IP 的两个主要传输层协议是 **TCP 和 UDP**。**TCP 是一种面向连接的全双工协议，而 UDP 是一种单工无连接协议**。在互联网层，**互联网控制消息协议（ICMP）** 用于确定网络或特定链路的健康状况。ping、traceroute 和其他网络管理工具**都使用**ICMP。ping 实用程序采用 ICMP 回波数据包，并将其弹出远程系统。因此，你可以使用 ping 来确定远程系统是否在线、远程系统是否迅速响应、中间系统是否支持通信以及中间系统通信的性能效率水平。
 
 * Application, Presentation and Session layers at OSI model is equivalent to Application Layer at TCP/IP, and the protocol suite is: FTP, Telnet, SNMP, LPD, TFPT, SMTP, NFS, X Window.
 * Transport layer are the same between OSI model and TCP/IP model, protocol suite: TCP, UDP
 * Network layer at OSI model is equivalent to Internet layer at TCP/IP model, and protocol suite is: IGMP, IP, ICMP
 * Data link and Physical layer at OSI model is equivalent at Network Interface layer at TCP/IP, and protocol suite is: Ethernet, Fast Ethernet, Token Ring, FDDI
-
+* OSI 模型中的应用层、呈现层和会话层相当于 TCP/IP 的应用层，协议套件包括： FTP、Telnet、SNMP、LPD、TFPT、SMTP、NFS、X Window： FTP、Telnet、SNMP、LPD、TFPT、SMTP、NFS、X Window。
+* 传输层与 OSI 模型和 TCP/IP 模型相同，协议套件为 TCP、UDP
+* OSI 模型的网络层等同于 TCP/IP 模型的互联网层，协议套件为 IGMP、IP、ICMP
+* OSI 模型的数据链路层和物理层等同于 TCP/IP 模型的网络接口层，协议套件有：以太网、快速以太网、令牌环： 以太网、快速以太网、令牌环、FDDI
 
 ### Base concepts
 ### 基本概念
@@ -163,21 +201,26 @@ At the Application Layer, TCP/IP protocols include **Telnet**, File Transfer Pro
 * Ethernet: A standard that defines wired communications of networked devices
 * IP Address: Logical address representing the network interface
 * MAC Address: Address that denotes the vendor or manufactures of the physical network interface
-
+* 交换机： 将流量路由到已知设备端口的设备
+* 服务器： 向其他计算机提供信息的计算机
+* 防火墙： 防火墙：根据一组定义的规则过滤网络流量的设备
+* 以太网： 定义网络设备有线通信的标准
+* IP 地址： 代表网络接口的逻辑地址
+* MAC 地址： 表示物理网络接口供应商或制造商的地址
 
 ### Internet Protocol (IPv4 and IPv6)
 ### 網際網路協定（IPv4 和 IPv6）
 IPv4 provides a 32-bit address space. IPv6 provides a 128-bit address space. The first one is exhausted nowadays, but it is still used because of the NAT technology. 32 bits means 4 octets of 8 bits, which is represented in a dotted decimal notation such as 192.168.0.1, which means in binary notation 11000000 10101000 00000000 00000001
-
+IPv4 提供 32 位地址空间。IPv6 提供 128 位地址空间。第一种地址空间如今已被淘汰，但由于使用了 NAT 技术，仍在使用。32 位意味着 4 个八进制 8 位，用点十进制表示，如 192.168.0.1，二进制表示为 11000000 10101000 00000000 00000001
 
 IP hosts/devices associate an address with a unique logical address. An IPv4 address is expressed as four octets separated by a dot (.), for example, 216.12.146.140. Each octet may have a value between 0 and 255. However, **0 is the network itself (not a device on that network), and 255 is generally reserved for broadcast purposes**. Each address is subdivided into two parts: **the network number and the host**. The network number assigned by an external organization, such as the Internet Corporation for Assigned Names and Numbers (ICANN), represents the organization’s network. The host represents the network interface within the network.  
-
+IP 主机/设备将地址与唯一的逻辑地址相关联。IPv4 地址以四个八位字节表示，中间用点（.）隔开，例如 216.12.146.140。每个八位字节的值在 0 到 255 之间。不过，**0 表示网络本身（而不是该网络上的设备），255 通常保留用于广播目的**。每个地址又分为两部分： **网络编号和主机**。由外部组织（如互联网名称与数字地址分配机构（ICANN））分配的网络号代表该组织的网络。主机代表网络内的网络接口。 
 
 **To ease network administration, networks are typically divided into subnets**. Because subnets cannot be distinguished with the addressing scheme discussed so far, a separate mechanism, **the subnet mask**, is used to define the part of the address used for the subnet. The mask is usually converted to decimal notation like 255.255.255.0. **With the ever-increasing number of computers and networked devices, it is clear that IPv4 does not provide enough addresses for our needs.** To overcome this shortcoming, **IPv4 was sub-divided into public and private address ranges.** Public addresses are limited with IPv4, but this issue was addressed in part with private addressing. Private addresses can be shared by anyone, and it is highly likely that everyone on your street is using the same address scheme.  
-
+**为了便于网络管理，网络通常被划分为子网**。由于子网无法用目前讨论的寻址方案来区分，因此需要使用一种单独的机制，即**子网掩码**，来定义用于子网的地址部分。掩码通常转换为十进制符号，如 255.255.255.0。**随着计算机和联网设备数量的不断增加，IPv4 提供的地址显然不能满足我们的需要。** 为了克服这一缺陷，IPv4 被细分为公共地址和专用地址范围。私有地址可由任何人共享，而且很可能你所在街道上的每个人都在使用相同的地址方案。 
 
 The nature of the addressing scheme established by IPv4 meant that network designers had to start thinking in terms of IP address reuse. IPv4 facilitated this in several ways, such as its creation of the private address groups; this allows every LAN in every SOHO (small office, home office) situation to use addresses such as 192.168.2.xxx for its internal network addresses, without fear that some other system can intercept traffic on their LAN. This table shows the private addresses available for anyone to use:
-
+IPv4 所建立的寻址方案的性质意味着网络设计者必须开始考虑 IP 地址的重复使用。IPv4 以多种方式促进了这一点，例如它创建了专用地址组；这使得 SOHO（小型办公室、家庭办公室）环境中的每个局域网都可以使用 192.168.2.xxx 等地址作为内部网络地址，而不必担心其他系统会拦截其局域网上的流量。该表显示了可供任何人使用的专用地址：
 
 | RANGE |
 |-------|
@@ -186,99 +229,153 @@ The nature of the addressing scheme established by IPv4 meant that network desig
 |192.168.0.0 to 192.168.255.254|
 
 The first octet of **127 is reserved for a computer’s loopback address**. Usually, the address 127.0.0.1 is used. **The loopback address is used to provide a mechanism for self-diagnosis and troubleshooting at the machine level**. This mechanism allows a network administrator to treat a local machine as if it were a remote machine and ping the network interface to establish whether it is operational.
+第一个八位位组 **127 保留给计算机的环回地址**。通常使用 127.0.0.1 地址。**环回地址用于提供一种在机器层面进行自我诊断和故障排除的机制**。该机制允许网络管理员将本地计算机视作远程计算机，通过 ping 网络接口来确定其是否正常运行。
 
 IPv6 is a modernization of IPv4, which addressed a number of weaknesses in the IPv4 environment:
+IPv6 是 IPv4 的现代化，它解决了 IPv4 环境中的一些弱点：
 
     * A much larger address field: IPv6 addresses are **128 bits**, which supports 2128 or 340,282,366,920,938,463,463,374,607,431,768,211,456 hosts. **This ensures that we will not run out of addresses**.
     * Improved security:** IPsec is an optional part of IPv4 networks, but a mandatory component of IPv6 networks**. This will help ensure the integrity and confidentiality of IP packets and allow communicating partners **to authenticate with each other**.
     * Improved quality of service (QoS): This will help services obtain an appropriate share of a network’s bandwidth.
+  * 地址字段更大： IPv6 地址为**128 位**，可支持 2128 或 340,282,366,920,938,463,463,374,607,431,768,211,456 台主机。**这将确保我们不会耗尽地址**。
+    * 提高安全性：** IPsec 是 IPv4 网络的可选部分，但却是 IPv6 网络的强制组成部分**。 这将有助于确保 IP 数据包的完整性和保密性，并允许通信伙伴**相互验证**。
+    * 提高服务质量（QoS）： 这将有助于服务获得适当的网络带宽份额。
 
 An IPv6 address is shown as **8 groups of four digits**. Instead of numeric (0-9) digits like IPv4, **IPv6 addresses use the hexadecimal range (0000-ffff) and are separated by colons (:)** rather than periods (.). An example IPv6 address is **2001:0db8:0000:0000:0000:ffff:0000:0001**. To make it easier for humans to read and type, it can be shortened by removing the leading zeros at the beginning of each field and substituting two colons (::) for the longest consecutive zero fields. All fields must retain at least one digit. After shortening, the example address above is rendered as 2001:db8::ffff:0:1, which is much easier to type. As in IPv4, there are some addresses and ranges that are reserved for special uses:
+IPv6 地址显示为**8 组四位数**。IPv6 地址不使用 IPv4 的数字（0-9），而是使用十六进制范围（0000-ffff），并用冒号（:）** 而不是句号（.）分隔。一个 IPv6 地址示例是 **2001:0db8:0000:0000:0000:fffff:0000:0001**。为了便于人类阅读和输入，可以去掉每个字段开头的前导零，用两个冒号（::）代替最长的连续零字段，从而缩短地址。所有字段必须至少保留一位数字。经过缩写后，上面的示例地址将显示为 2001:db8::fffff:0:1，这就更容易输入了。与 IPv4 一样，有些地址和范围是为特殊用途保留的：
 
     * ::1 is the local loopback address, used the same as 127.0.0.1 in IPv4.
     * The range 2001:db8:: to 2001:db8:ffff:ffff:ffff:ffff:ffff:ffff is reserved for documentation use, just like in the examples above.
     * **fc00**:: to **fdff**:ffff:ffff:ffff:ffff:ffff:ffff:ffff are addresses reserved for internal network use and are not routable on the internet.
+* ::1 是本地环回地址，用法与 IPv4 中的 127.0.0.1 相同。
+    * 2001:db8:: 至 2001:db8:ffff:ffff:ffff:ffff:ffff:ffff:ffff 是保留给文档使用的范围，就像上面的例子一样。
+    **fc00**:: 至 **fdff**:fffff:fffff:fffff:fffff:fffff:fffff:fffff 是保留给内部网络使用的地址，不能在互联网上路由。
 
 ### What is WiFi?
-
+### 什麼是 WiFi？
 Wireless networking is a popular method of connecting corporate and home systems because of the ease of deployment and relatively low cost. It has made networking more versatile than ever before. Workstations and portable systems are no longer tied to a cable but can roam freely within the signal range of the deployed wireless access points. However, with this freedom comes additional vulnerabilities.
+无线网络因其易于部署和相对低廉的成本而成为连接企业和家庭系统的常用方法。它使联网比以往任何时候都更加灵活。工作站和便携式系统不再受电缆束缚，而是可以在部署的无线接入点信号范围内自由漫游。然而，这种自由也带来了更多的脆弱性。
 
 Wi-Fi range is generally wide enough for most homes or small offices, and range extenders may be placed strategically to extend the signal for larger campuses or homes. Over time the Wi-Fi standard has evolved, with each updated version faster than the last.  
+对于大多数家庭或小型办公室来说，Wi-Fi 的覆盖范围通常足够广，而对于较大的校园或家庭来说，可以战略性地放置范围扩展器来扩展信号。随着时间的推移，Wi-Fi 标准也在不断发展，每一个更新版本都比上一个版本更快。 
 
 In a LAN, threat actors need to enter the physical space or immediate vicinity of the physical media itself. For wired networks, this can be done by placing sniffer taps onto cables, plugging in USB devices, or using other tools that require physical access to the network. By contrast, wireless media intrusions can happen at a distance. 
+在局域网中，威胁行为者需要进入物理空间或物理介质本身的邻近区域。对于有线网络，可以通过在电缆上放置嗅探器、插入 USB 设备或使用其他需要物理访问网络的工具来实现。相比之下，无线介质入侵可以在远距离进行。
 
 ### Security of the Network 
-
+### 網路安全
 TCP/IP’s vulnerabilities are numerous. Improperly implemented TCP/IP stacks in various operating systems are vulnerable to various **DoS/DDoS attacks**, **fragment attacks**, **oversized packet attacks**, **spoofing attacks**, **and man-in-the-middle attacks**. TCP/IP (as well as most protocols) is also subject to passive attacks via monitoring or sniffing. Network monitoring, or sniffing, is the act of monitoring traffic patterns to obtain information about a network. 
+TCP/IP 的漏洞很多。各种操作系统中实施不当的 TCP/IP 协议栈容易受到各种**DoS/DDoS 攻击**、**碎片攻击**、**超大数据包攻击**、**欺骗攻击**和中间人攻击**。TCP/IP （以及大多数协议）也会受到通过监控或嗅探进行的被动攻击。网络监控或嗅探是通过监控流量模式来获取网络信息的行为。
 
 ### Ports and Protocols (Applications/Services)
-
+### 連接埠和協定（應用程式/服務）
 * Physical Ports: Physical ports are the ports on the routers, switches, servers, computers, etc. that you connect the wires, e.g., fiber optic cables, Cat5 cables, etc., to create a network.
+* 物理端口： 物理端口是指路由器、交换机、服务器、计算机等设备上的端口，您可以通过这些端口连接电线（如光纤电缆、Cat5 电缆等）来创建网络。
 
 * Logical Ports: When a communication connection is established between two systems, it is done using ports. A logical port (also called a socket) is little more than an address number that both ends of the communication link agree to use when transferring data. Ports allow a single IP address to be able to support multiple simultaneous communications, each using a different port number. In the Application Layer of the TCP/IP model (which includes the Session, Presentation, and Application Layers of the OSI model) reside numerous application- or service-specific protocols. Data types are mapped using port numbers associated with services. For example, web traffic (or HTTP) is port 80. Secure web traffic (or HTTPS) is port 443. Table 5.4 highlights some of these protocols and their customary or assigned ports. You’ll note that in several cases a service (or protocol) may have two ports assigned, one secure and one insecure. When in doubt, systems should be implemented using the most secure version as possible of a protocol and its services.
+* 逻辑端口： 在两个系统之间建立通信连接时，使用的是端口。逻辑端口（也称为套接字）只不过是通信链路两端同意在传输数据时使用的一个地址编号。端口允许单个 IP 地址同时支持多个通信，每个地址使用不同的端口号。在 TCP/IP 模型的应用层（包括 OSI 模型的会话层、呈现层和应用层）中，存在着许多特定于应用或服务的协议。数据类型使用与服务相关的端口号进行映射。例如，网络流量（或 HTTP）是 80 端口。安全网络流量（或 HTTPS）为 443 端口。表 5.4 重点介绍了其中一些协议及其惯用或指定的端口。您会注意到，在某些情况下，一项服务（或协议）可能分配了两个端口，一个安全端口和一个不安全端口。如有疑问，应尽可能使用最安全版本的协议及其服务来实施系统。
 
     * Well-known ports (0–1023): These ports are related to the common protocols that are at the core of the Transport Control Protocol/Internet Protocol (TCP/IP) model, Domain Name Service (DNS), Simple Mail Transfer Protocol (SMTP), etc.
     * Registered ports (1024–49151): These ports are often associated with proprietary applications from vendors and developers. While they are officially approved by the Internet Assigned Numbers Authority (IANA), in practice many vendors simply implement a port of their choosing. Examples include Remote Authentication Dial-In User Service (RADIUS) authentication (1812), Microsoft SQL Server (1433/1434) and the Docker REST API (2375/2376).
     * Dynamic or private ports (49152–65535): Whenever a service is requested that is associated with well-known or registered ports, those services will respond with a dynamic port that is used for that session and then released.
+    * 知名端口（0-1023）： 这些端口与作为传输控制协议/互联网协议（TCP/IP）模型核心的常用协议、域名服务（DNS）、简单邮件传输协议（SMTP）等有关。
+    * 注册端口（1024-49151）： 这些端口通常与供应商和开发人员的专有应用程序有关。虽然这些端口已获得互联网编号分配机构 (IANA) 的正式批准，但在实践中，许多供应商只是实施了自己选择的端口。例如，远程身份验证拨入用户服务 (RADIUS) 身份验证 (1812)、Microsoft SQL Server (1433/1434) 和 Docker REST API (2375/2376)。
+    * 动态或专用端口（49152-65535）： 每当请求与众所周知或已注册端口相关联的服务时，这些服务都会响应一个动态端口，该端口用于该会话，然后释放。
 
 ### Secure Ports
-
+### 安全端口
 Some network protocols transmit information in clear text, meaning it is not encrypted and should not be used. Clear text information is subject to network sniffing. This tactic uses software to inspect packets of data as they travel across the network and extract text such as usernames and passwords. Network sniffing could also reveal the content of documents and other files if they are sent via insecure protocols. The table below shows some of the insecure protocols along with recommended secure alternatives.
+某些网络协议以明文传输信息，这意味着这些信息没有加密，不应使用。明文信息会受到网络嗅探的攻击。这种手段使用软件来检查在网络上传输的数据包，并提取用户名和密码等文本。如果文件和其他文件是通过不安全协议发送的，网络嗅探还可能泄露文件和其他文件的内容。下表列出了一些不安全协议以及推荐的安全替代方案。
 
 | Insecure Port | Description | Protocol | Secure Alternative Port | Protocol |
+| 不安全端口 | 说明 | 协议 | 安全备用端口 | 协议
 |---------------|-------------|----------|-------------------------|----------|
 | 21 | Port 21, File Transfer Protocol (FTP) sends the username and password **using plaintext from the client to the server**. This could be intercepted by an attacker and later used to retrieve confidential information from the server. **The secure alternative, SFTP, on port 22 uses encryption to protect the user credentials and packets of data being transferred** | File Transfer Protocol 	|22* - SFTP	| Secure File Transfer Protocol|
+| 文件传输协议（FTP）通过明文从客户端向服务器发送用户名和密码**。这可能会被攻击者截获，随后用于从服务器检索机密信息。**22 端口的安全替代方案 SFTP 使用加密技术保护用户凭证和传输的数据包** | 文件传输协议 |22* - SFTP | 安全文件传输协议
+
 | 23 | Port 23, telnet, is used by many Linux systems and any other systems **as a basic text-based terminal**. All information to and from the host on a telnet connection is sent in plaintext and **can be intercepted by an attacker**. This includes username and password as well as all information that is being presented on the screen, since this interface is all text. **Secure Shell (SSH) on port 22 uses encryption to ensure that traffic between the host and terminal is not sent in a plaintext format**| Telnet | 22* - SSH	| Secure Shell|
+| 23 | 端口 23，即 telnet，被许多 Linux 系统和任何其他系统**用作基本的文本终端**。通过 telnet 连接与主机之间的所有信息都以明文形式发送，**可被攻击者截获**。这包括用户名和密码以及屏幕上显示的所有信息，因为该界面是全文本的。端口 22 上的安全外壳（SSH）使用加密技术，确保主机与终端之间的通信不会以明文格式发送****| Telnet | 22* - SSH | Secure Shell | 22* - Telnet | 22* - SSH | Secure Shell | 22* - Telnet | 22* - SSH | Secure Shell
+
 | 25 | Port 25, Simple Mail Transfer Protocol (SMTP) is the default unencrypted port for sending email messages. Since it is unencrypted, data contained within the emails could be discovered by network sniffing. The secure alternative is to use port 587 for SMTP using Transport Layer Security (TLS) which will encrypt the data between the mail client and the mail server| Simple Mail Transfer Protocol | 587 - SMTP	| SMTP with TLS |
+| 25 | 25 端口，简单邮件传输协议（SMTP）是发送电子邮件的默认未加密端口。由于未加密，电子邮件中包含的数据可能会被网络嗅探器发现。安全的替代方法是使用传输层安全（TLS）将邮件客户端与邮件服务器之间的数据加密的 SMTP 587 端口。
+
 | 37 | Port 37, Time Protocol, may be in use by legacy equipment and has mostly been replaced by using port 123 for Network Time Protocol (NTP). NTP on port 123 offers better error-handling capabilities, which reduces the likelihood of unexpected errors | Time Protocol | 123 - NTP | Network Time Protocol |
+| 37 | 37 端口（时间协议）可能被传统设备使用，大部分已被用于网络时间协议（NTP）的 123 端口取代。123 端口上的 NTP 具有更好的错误处理能力，可降低出现意外错误的可能性。
+
 | 53 | Port 53, Domain Name Service (DNS), is still used widely. However, using DNS over TLS (DoT) on port 853 protects DNS information from being modified in transit | Domain Name Service | 853 - DoT | DNS over TLS (DoT) |
+| 53 | 53 端口，域名服务（DNS），仍在广泛使用。然而，在 853 端口使用 DNS over TLS (DoT)，可防止 DNS 信息在传输过程中被修改。
+
 | 80 | Port 80, HyperText Transfer Protocol (HTTP) is the basis of nearly all web browser traffic on the internet. Information sent via HTTP is not encrypted and is susceptible to sniffing attacks. HTTPS using TLS encryption is preferred, as it protects the data in transit between the server and the browser. Note that this is often notated as SSL/TLS. Secure Sockets Layer (SSL) has been compromised is no longer considered secure. It is now recommended for web servers and clients to use Transport Layer Security (TLS) 1.3 or higher for the best protection | HyperText Transfer Protocol | 443 - HTTPS | HyperText Transfer Protocol (SSL/TLS) |
+| 超文本传输协议（HTTP）是互联网上几乎所有网络浏览器流量的基础。通过 HTTP 发送的信息未经加密，容易受到嗅探攻击。使用 TLS 加密的 HTTPS 更受青睐，因为它能保护服务器和浏览器之间传输中的数据。请注意，这通常被标记为 SSL/TLS。安全套接字层（SSL）已被破解，不再被认为是安全的。现在建议网络服务器和客户端使用传输层安全（TLS）1.3 或更高版本，以获得最佳保护。
+
 | 143 | Port 143, Internet Message Access Protocol (IMAP) is a protocol used for retrieving emails. IMAP traffic on port 143 is not encrypted and susceptible to network sniffing. The secure alternative is to use port 993 for IMAP, which adds SSL/TLS security to encrypt the data between the mail client and the mail server | Internet Message Access Protocol | 993 - IMAP | IMAP for SSL/TLS |
+| 143 | 143 端口，互联网消息访问协议（IMAP）是一种用于检索电子邮件的协议。143 端口的 IMAP 流量未加密，容易被网络嗅探。
+
 | 161/162 | Ports 161 and 162, Simple Network Management Protocol, are commonly used to send and receive data used for managing infrastructure devices. Because sensitive information is often included in these messages, it is recommended to use SNMP version 2 or 3 (abbreviated SNMPv2 or SNMPv3) to include encryption and additional security features. Unlike many others discussed here, all versions of SNMP use the same ports, so there is not a definitive secure and insecure pairing. Additional context will be needed to determine if information on ports 161 and 162 is secured or not | Simple Network Management Protocol | 161/162 - SNMP | SNMPv3 |
+| 161/162 | 端口 161 和 162（简单网络管理协议）通常用于发送和接收用于管理基础设施设备的数据。由于这些信息中通常包含敏感信息，因此建议使用 SNMP 版本 2 或 3（缩写为 SNMPv2 或 SNMPv3），以包含加密和其他安全功能。与本文讨论的许多其他版本不同，SNMP 的所有版本都使用相同的端口，因此没有明确的安全和不安全配对。要确定端口 161 和 162 上的信息是否安全，还需要其他背景信息。
+
 | 445 | Port 445, Server Message Block (SMB), is used by many versions of Windows for accessing files over the network. Files are transmitted unencrypted, and many vulnerabilities are well-known. Therefore, it is recommended that traffic on port 445 should not be allowed to pass through a firewall at the network perimeter. A more secure alternative is port 2049, Network File System (NFS). Although NFS can use encryption, it is recommended that NFS not be allowed through firewalls either | Server Message Block | 2049 - NFS | Network File System |
+| 445 | 445 端口，即服务器消息块（SMB），被许多版本的 Windows 用于通过网络访问文件。文件传输未加密，而且存在许多众所周知的漏洞。因此，建议不要让 445 端口的流量通过网络外围的防火墙。更安全的选择是 2049 端口，即网络文件系统（NFS）。虽然 NFS 可以使用加密，但建议不允许 NFS 通过防火墙。
+
 | 389 | Port 389, Lightweight Directory Access Protocol (LDAP), is used to communicate directory information from servers to clients. This can be an address book for email or usernames for logins. The LDAP protocol also allows records in the directory to be updated, introducing additional risk. Since LDAP is not encrypted, it is susceptible to sniffing and manipulation attacks. Lightweight Directory Access Protocol Secure (LDAPS) adds SSL/TLS security to protect the information while it is in transit | Lightweight Directory Access Protocol | 636 - LDAPS	| Lightweight Directory Access Protocol Secure |
+| 轻量级目录访问协议（LDAP）389 端口用于将目录信息从服务器传送到客户端。这可以是用于电子邮件的地址簿或用于登录的用户名。LDAP 协议还允许更新目录中的记录，从而带来额外风险。由于 LDAP 没有加密，因此很容易受到嗅探和操纵攻击。轻量级目录访问协议安全（LDAPS）增加了 SSL/TLS 安全性，以保护传输中的信息。
 
 ### SYN, SYN-ACK, ACK
 
 ## Module 2 Understand Network (Cyber) Threats and Attacks
-
+## 模組 2 了解網路（網路）威脅和攻擊
 Domain D4.1.2, D4.2.2, D4.2.3
 
 ### Types of Threats
-
+### 威脅類型
 * Spoofing: an attack with the goal of **gaining access to a target system through the use of a falsified identity**. Spoofing can be used against IP addresses, MAC address, usernames, system names, wireless network SSIDs, email addresses, and many other types of logical identification.
-
+* 欺骗：通过伪造身份**访问目标系统的攻击。欺骗可用于攻击 IP 地址、MAC 地址、用户名、系统名、无线网络 SSID、电子邮件地址和许多其他类型的逻辑标识。
+  
 * Phising: an attack that **attempts to misdirect legitimate users to malicious websites through** the abuse of **URLs or hyperlinks in emails could be considered phishing**.
+* 网络钓鱼：通过滥用电子邮件中的**网址或超链接，**试图将合法用户误导到恶意网站的攻击可视为网络钓鱼**。
 
 * DoS/DDoS: a denial-of-service (DoS) attack is a network resource consumption attack that has the **primary goal of preventing legitimate activity on a victimized system**. Attacks involving numerous unsuspecting secondary victim systems are known as distributed denial-of-service (DDoS) attacks.
+* DoS/DDoS：拒绝服务（DoS）攻击是一种消耗网络资源的攻击，其**主要目标是阻止受害系统上的合法活动**。涉及众多不知情的次要受害系统的攻击被称为分布式拒绝服务 (DDoS) 攻击。
 
 * Virus: The computer virus is perhaps the earliest form of malicious code to plague security administrators. As with biological viruses, **computer viruses have two main functions—propagation and destruction**. A virus is a **self-replicating** piece of code that spreads without the consent of a user, but frequently with their assistance (a user has to click on a link or open a file).
+* 病毒： 计算机病毒可能是最早困扰安全管理员的恶意代码形式。与生物病毒一样，**计算机病毒有两个主要功能--传播和破坏**。病毒是一种**自我复制**的代码，它的传播不需要用户的同意，但经常需要用户的协助（用户必须点击链接或打开文件）。
 
 * Worm: Worms pose a significant **risk to network security**. They contain the same destructive potential as other malicious code objects with an added twist—they propagate themselves without requiring any human intervention.
+* 蠕虫： 蠕虫对网络安全构成重大**风险。它们与其他恶意代码对象具有相同的破坏潜力，但有一个额外的特点--它们不需要任何人工干预就能自我传播。
 
 * Trojan: the Trojan is a software program **that appears benevolent but carries a malicious**, behind-the-scenes payload that has the potential to wreak havoc on a system or network. For example, ransomware often uses a Trojan to infect a target machine and then uses encryption technology to encrypt documents, spreadsheets and other files stored on the system with a key known only to the malware creator.
+* 特洛伊木马：特洛伊木马是一种**的软件程序，它看似善良，却携带着恶意**，幕后的有效载荷有可能对系统或网络造成严重破坏。例如，勒索软件通常使用特洛伊木马感染目标机器，然后使用加密技术加密系统中存储的文档、电子表格和其他文件，加密密钥只有恶意软件制作者才知道。
 
 * On-path attack: In an on-path attack, attackers place themselves between two devices, often between a web browser and a web server, to intercept or modify information that is intended for one or both of the endpoints. **On-path attacks** are also known as **man-in-the-middle (MITM) attacks**.
+* 路径上攻击： 在路径上攻击中，攻击者将自己置于两台设备之间，通常是网络浏览器和网络服务器之间，以拦截或修改本应提供给一个或两个端点的信息。**路径上攻击**也称为**中间人（MITM）攻击**。
 
 * Side-channel: A side-channel attack is a **passive**, **noninvasive attack** to **observe the operation of a device**. Methods include power monitoring, timing and fault analysis attacks.
+* 侧信道： 侧信道攻击是一种**被动**、**非侵入式攻击，目的是**观察设备的运行**。方法包括电源监控、定时和故障分析攻击。
 
 * Advanced Persistent Threat: Advanced persistent threat (APT) refers to **threats that demonstrate an unusually high level of technical and operational sophistication spanning months or even years**. APT attacks are often conducted by highly organized groups of attackers.
+* 高级持续性威胁： 高级持续性威胁（APT）是指**技术和操作复杂程度异常高、持续时间长达数月甚至数年的威胁**。APT 攻击通常由高度组织化的攻击者群体实施。
 
 * Insider Threat: Insider threats are threats that **arise from individuals who are trusted by the organization**. These could be disgruntled employees or employees involved in espionage. Insider threats are not always willing participants. A trusted user who falls victim to a scam could be an unwilling insider threat.
+* 内部威胁：内部威胁是指**来自组织信任的个人**的威胁。这些人可能是心怀不满的员工或参与间谍活动的员工。内部威胁并不总是自愿参与的。受信任的用户成为骗局的受害者，可能是不情愿的内部威胁。
 
 * Malware: A program that is inserted into a system, usually covertly, **with the intent of compromising the confidentiality, integrity or availability of the victim’s data**, applications or operating system or otherwise annoying or disrupting the victim.
+* 恶意软件： 通常是暗中插入系统的程序，**目的是破坏受害者数据**、应用程序或操作系统的保密性、完整性或可用性，或以其他方式烦扰或破坏受害者。
 
 * Ransomware: Malware used for the purpose of facilitating a ransom attack. Ransomware attacks often use cryptography to “lock” the files on an affected computer and require the payment of a ransom fee in return for the “unlock” code.
+* 赎金软件： 用于勒索攻击的恶意软件。勒索软件攻击通常使用加密技术 "锁定 "受影响计算机上的文件，并要求支付赎金以换取 "解锁 "代码。
 
 ### Identify Threats and Tools Used to Prevent Them
-
+### 識別威脅和用於預防威脅的工具
 Here are some examples of steps that can be taken to protect networks.  
+下面举例说明可以采取哪些措施来保护网络。 
 
 * If a system doesn’t need a service or protocol, it should not be running. Attackers cannot exploit a vulnerability in a service or protocol that isn’t running on a system. 
 * Firewalls can prevent many different types of attacks. Network-based firewalls protect entire networks, and host-based firewalls protect individual systems. 
-
+* 如果系统不需要某个服务或协议，它就不应该运行。攻击者无法利用系统中未运行的服务或协议中的漏洞。
+* 防火墙可以防止多种不同类型的攻击。基于网络的防火墙可以保护整个网络，基于主机的防火墙可以保护单个系统。
+  
 ### Identify Threats and Tools Used to Prevent Them Continued
-
+### 識別威脅和用於預防威脅的工具（續）
 * Instrusion Detection System (IDS) is a form of monitoring to detect abnormal activity; it detects intrusion attempts and system failures. Identifies Threats, Do not prevent threats
 * Host-based IDS (HIDS) monitors activity on a single computer. Identifies threats, Do not prevent Threats.
 * Network-based IDS (NIDS) monitors and evaluates network activity to detect attacks or event anomalies. Identifies threats, Do not prevent Threats.
@@ -287,16 +384,28 @@ Here are some examples of steps that can be taken to protect networks.
 * Scans evaluates the effectiveness of security controls. Identifies threats, Do not prevent Threats.
 * Firewall filters network traffic - managers and controls network traffic and protects the network. Identifies and Prevent threats.
 * Intrusion Protection System (IPS-NIPS/HIPS) is an active IDS automatically attempts to detect and block attacks before they reach target systems. Identifies and Prevent threats.
+* 入侵检测系统（IDS）是一种检测异常活动的监控形式；它能检测入侵企图和系统故障。识别威胁，但不能防止威胁
+* 基于主机的 IDS（HIDS）监控单台计算机上的活动。识别威胁，不阻止威胁。
+* 基于网络的 IDS (NIDS) 监控和评估网络活动，以检测攻击或异常事件。识别威胁，不防范威胁。
+* SIEM 收集来自整个企业的日志数据，以了解安全问题并分配资源。识别威胁，不阻止威胁。
+* 反恶意软件/反病毒软件旨在识别恶意软件或进程。识别和预防威胁。
+* 扫描评估安全控制的有效性。识别威胁，不预防威胁。
+* 防火墙过滤网络流量 - 管理和控制网络流量并保护网络。识别和预防威胁。
+* 入侵保护系统（IPS-NIPS/HIPS）是一种主动式 IDS，可在攻击到达目标系统之前自动检测和阻止攻击。识别和预防威胁。
 
 ### Intrusion Detection System (IDS)
-
+### 入侵偵測系統（IDS）
 **An intrusion occurs when an attacker is able to bypass or thwart security mechanisms and gain access to an organization’s resources.** Intrusion detection is a specific form of monitoring **that monitors recorded information and real-time events to detect abnormal activity indicating a potential incident or intrusion**. An intrusion detection system (IDS) **automates the inspection of logs and real-time system events to detect intrusion attempts and system failures**. An IDS is intended as part of a **defense-in-depth security plan**. **IDSs can** recognize attacks that come from external connections and attacks that spread internally. Once they detect a suspicious event, they respond by sending alerts or raising alarms. A primary goal of an IDS is to provide a means for a timely and accurate response to intrusions. 
+**入侵检测是一种特定形式的监控**，通过监控记录的信息和实时事件来检测显示潜在事件或入侵**的异常活动。入侵检测系统（IDS）**自动检查日志和实时系统事件，以检测入侵企图和系统故障**。IDS 是**深度防御安全计划**的一部分。**IDS 可以**识别来自外部连接的攻击和内部传播的攻击。一旦检测到可疑事件，就会发出警报或报警。IDS 的主要目标是提供对入侵做出及时、准确响应的手段。
 
 **IDS types are commonly classified as host-based and network-based. A host-based IDS (HIDS) monitors a single computer or host. A network-based IDS (NIDS) monitors a network by observing network traffic patterns.**
+** IDS 通常分为基于主机和基于网络两种类型。基于主机的 IDS（HIDS）监控单台计算机或主机。基于网络的 IDS（NIDS）通过观察网络流量模式监控网络。
 
 **Host-based Intrusion Detection System (HIDS)**: A HIDS monitors activity **on a single computer**, including **process calls and information recorded in system, application, security and host-based firewall logs**. It can often examine events in more detail than a NIDS can, and it can pinpoint specific files compromised in an attack. **It can also track processes employed by the attacker.** A benefit of HIDSs over NIDSs is that HIDSs can detect anomalies on the host system that NIDSs cannot detect. For example, **a HIDS can detect infections where an intruder has infiltrated a system and is controlling it remotely.** HIDSs are more costly to manage than NIDSs because they require administrative attention on each system, whereas NIDSs usually support centralized administration. A HIDS cannot detect network attacks on other systems.
 
+
 **Network Intrusion Detection System (NIDS)**: A NIDS monitors and **evaluates network activity to detect attacks or event anomalies**. **It cannot monitor the content of encrypted traffic but can monitor other packet details**. A single NIDS can monitor **a large network by using remote sensors to collect data at key network locations that send data to a central management console**. These sensors can monitor traffic at **routers, firewalls, network switches that support port mirroring, and other types of network taps**. **A NIDS has very little negative effect on the overall network performance**, and when it is deployed on a single-purpose system, it doesn’t adversely affect performance on any other computer. A NIDS is usually able to detect the initiation of an attack or ongoing attacks, but they can’t always provide information about the success of an attack. They won’t know if an attack affected specific systems, user accounts, files or applications.
+
 
 **Security Information and Event Management (SIEM)**: Security management involves the **use of tools that collect information about the IT environment from many disparate sources to better examine the overall security of the organization and streamline security efforts**. These tools are generally known as **security information and event management** (or S-I-E-M, pronounced “SIM”) solutions. The general **idea of a SIEM solution is to gather log data from various sources across the enterprise to better understand potential security concerns and apportion resources accordingly**. SIEM systems can be used along with other components (defense-in-depth) as part of an overall information security program.
 
