@@ -186,7 +186,7 @@ In today’s world of e-commerce and electronic transactions, **there are opport
 ＃＃＃ 隱私
 
 Privacy is **the right of an individual to control the distribution of information about themselves**. While security and privacy both focus on the protection of personal and sensitive data, there is a difference between them. With the increasing rate at which data is collected and digitally stored across all industries, the push for privacy legislation and compliance with existing policies steadily grows. In today’s global economy, privacy legislation and regulations on privacy and data protection can impact corporations and industries regardless of physical location. **Global privacy is an especially crucial issue when considering requirements regarding the collection and security of personal information**. There are several laws that define privacy and data protection, which periodically change. Ensuring that protective security measures are in place is not enough to meet privacy regulations or to protect a company from incurring penalties or fines from mishandling, misuse, or improper protection of personal or private information. An example of a law with multinational implications is the European Union’s General Data Protection Regulation (GDPR) which applies to all organizations, foreign or domestic, doing business in the EU or any persons in the EU. Companies operating or doing business within the United States may also fall under several state legislations that regulate the collection and use of consumer data and privacy. Likewise, member nations of the EU enact laws to put GDPR into practice and sometimes add more stringent requirements. These laws, including national- and state-level laws, dictate that any entity anywhere in the world handling the private data of people in a particular legal jurisdiction must abide by its privacy requirements. As a member of an organization's data protection team, you will not be required to interpret these laws, but you will need an understanding of how they apply to your organization.
-隐私是**个人控制自身信息传播的权利**。虽然安全和隐私都侧重于保护个人和敏感数据，但两者之间还是有区别的。随着各行各业收集和数字化存储数据的速度不断加快，推动隐私立法和遵守现有政策的呼声日益高涨。在当今的全球经济中，有关隐私和数据保护的隐私立法和法规会对企业和行业产生影响，无论其实际所在地在哪里。在考虑有关个人信息收集和安全的要求时，**全球隐私是一个尤为重要的问题**。有多部法律对隐私和数据保护做出了规定，这些规定会定期更改。确保采取保护性安全措施不足以满足隐私法规的要求，也不足以保护公司免于因个人或私人信息处理不当、滥用或保护不当而招致处罚或罚款。欧盟的《通用数据保护条例》（GDPR）就是一部具有跨国影响的法律，它适用于在欧盟开展业务的所有国内外组织或欧盟境内的任何个人。在美国境内运营或开展业务的公司也可能受若干州立法的管辖，这些州立法对消费者数据的收集和使用以及隐私进行了规范。同样，欧盟成员国也颁布了法律 
+ 隐私是**个人控制自身信息传播的权利**。虽然安全和隐私都侧重于保护个人和敏感数据，但两者之间还是有区别的。随着各行各业收集和数字化存储数据的速度不断加快，推动隐私立法和遵守现有政策的呼声日益高涨。在当今的全球经济中，有关隐私和数据保护的隐私立法和法规会对企业和行业产生影响，无论其实际所在地在哪里。在考虑有关个人信息收集和安全的要求时，**全球隐私是一个尤为重要的问题**。有多部法律对隐私和数据保护做出了规定，这些规定会定期更改。确保采取保护性安全措施不足以满足隐私法规的要求，也不足以保护公司免于因错误处理、滥用或不当保护个人或私人信息而招致处罚或罚款。欧盟的《通用数据保护条例》（GDPR）就是一部具有跨国影响的法律，它适用于在欧盟开展业务的所有国内外组织或欧盟境内的任何个人。在美国境内运营或开展业务的公司也可能受若干州立法的管辖，这些州立法对消费者数据的收集和使用以及隐私进行了规范。同样，欧盟成员国也会颁布法律，将 GDPR 付诸实施，有时还会增加更严格的要求。这些法律（包括国家和州一级的法律）规定，世界上任何地方的任何实体在处理特定法律管辖区内的个人隐私数据时，都必须遵守其隐私要求。作为企业数据保护团队的一员，您无需解释这些法律，但您需要了解这些法律如何适用于您的企业。
 
 ## Module 2 Understand the risk management process
 ## 模組 2 了解風險管理流程
@@ -221,14 +221,17 @@ Matrix: Probability X Impact generates four possible combinations:
 ### 風險管理術語
 
 * **An asset** is something in need of protection because it has value to the organization. It could be a tangible asset or intangible, such as information.
+  ** 资产**是需要保护的东西，因为它对组织有价值。它可以是有形资产，也可以是无形资产，如信息。
+  
 * **A vulnerability** is a gap or weakness in an organization's protection of its valuable assets, including information. (NIST SP 800-30). A vulnerability is an inherent weakness or flaw in a system or component, which, if triggered or acted upon, could cause a risk event to occur. An organization’s security team strives to decrease its vulnerability. To do so, **they view their organization with the eyes of the threat actor**, asking themselves, **“Why would we be an attractive target?”** The answers might provide steps to take that will discourage threat actors, cause them to look elsewhere or simply make it more difficult to launch an attack successfully. **Managing vulnerabilities starts with one simple step: Learn what they are**.
+  ** 漏洞**是组织在保护其宝贵资产（包括信息）方面存在的漏洞或薄弱环节。(NIST SP 800-30)。漏洞是系统或组件中固有的弱点或缺陷，一旦触发或采取行动，就可能导致风险事件的发生。组织的安全团队努力降低其脆弱性。要做到这一点，**他们要以威胁行动者的眼光来看待自己的组织**，问自己：**"为什么我们会成为一个有吸引力的目标？"**答案可能会提供一些步骤，让威胁行动者望而却步、另觅他处，或者只是增加成功发起攻击的难度。**管理漏洞从一个简单的步骤开始： 了解它们是什么**。
+  
 * **A threat** is something or someone that aims to exploit a vulnerability to gain unauthorized access. A threat is a person or thing that takes action to exploit (or make use of) a target organization’s system vulnerabilities, as part of achieving or furthering its goal or objectives.
+** 威胁**是指旨在利用漏洞获取未经授权访问的东西或人。威胁是指采取行动利用（或利用）目标组织的系统漏洞，以实现或推进其目标或目的的人或事。
+  
 * Likelihood, when determining an organization’s vulnerabilities, the security team will consider **the probability**, or likelihood , of **a potential vulnerability being exploited within the construct of the organization’s threat environment**. **Likelihood of occurrence is a weighted factor based on a subjective analysis of the probability that a given threat or set of threats is capable of exploiting a given vulnerability or set of vulnerabilities.**
-** 资产**是需要保护的东西，因为它对组织有价值。它可以是有形资产，也可以是无形资产，如信息。
-** 漏洞**是组织在保护其宝贵资产（包括信息）方面存在的漏洞或薄弱环节。(NIST SP 800-30)。漏洞是系统或组件中固有的弱点或缺陷，一旦触发或采取行动，就可能导致风险事件的发生。组织的安全团队努力降低其脆弱性。要做到这一点，**他们要以威胁行动者的眼光来看待自己的组织**，问自己：**"为什么我们会成为一个有吸引力的目标？"**答案可能会提供一些步骤，让威胁行动者望而却步、另觅他处，或者只是增加成功发起攻击的难度。**管理漏洞从一个简单的步骤开始： 了解它们是什么**。
-**威胁**是旨在利用漏洞获取未经授权访问的东西或人。威胁是指采取行动利用（或利用）目标组织的系统漏洞，以实现或推进其目标或目的的人或事。
-* 可能性，在确定组织的漏洞时，安全团队将考虑**在组织的威胁环境中**潜在漏洞被利用的概率**或可能性。**发生的可能性是一个基于以下因素的加权系数。
-
+* 可能性，在确定组织的漏洞时，安全团队将考虑**在组织的威胁环境中**潜在漏洞被利用的概率**或可能性。**发生的可能性是一个加权因素，基于对特定威胁或一组威胁能够利用特定漏洞或一组漏洞的可能性的主观分析。
+  
 Finally, the security team will consider the likely results if a threat is realized and an event occurs. Impact is the magnitude of harm that can be expected to result from the consequences of unauthorized disclosure of information, unauthorized modification of information, unauthorized destruction of information, or loss of information or information system availability.
 最后，安全团队将考虑威胁实现和事件发生时可能产生的结果。影响是指未经授权披露信息、未经授权修改信息、未经授权破坏信息或丢失信息或信息系统可用性的后果可能造成的危害程度。
 
